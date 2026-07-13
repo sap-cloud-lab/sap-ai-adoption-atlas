@@ -754,6 +754,7 @@ a {
 
 .atlas-path-adoption {
   min-height: 52px;
+  margin-top: 12px;
   margin-bottom: 16px;
   padding-bottom: 12px;
   border-bottom: 1px solid rgba(147, 200, 244, 0.16);
@@ -1203,6 +1204,7 @@ a {
   }
 
   .atlas-path-adoption {
+    margin-top: 8px;
     margin-bottom: 8px;
     padding: 0 0 8px;
     border-bottom-color: var(--atlas-line);
