@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Embedded AI Features | SAP AI Adoption Atlas</title>
-    <meta name="description" content="SAP-delivered AI features embedded in SAP applications, with catalogue coverage, examples, adoption checks, and official SAP sources." />
+    <meta name="description" content="Browse all verified SAP-delivered Embedded AI Feature records by SAP module, availability, commercial model, and cloud-edition evidence." />
     <link rel="stylesheet" href="./atlas-pages.css" />
+    <link rel="stylesheet" href="./embedded-ai-catalog.css" />
     <script defer src="./vendor/lucide.min.js"></script>
-    <script defer src="./app.js"></script>
-    <script defer src="./atlas-pages.js"></script>
+    <script defer src="./embedded-ai-data.js"></script>
+    <script defer src="./embedded-ai-catalog.js"></script>
   </head>
-  <body>
+  <body class="embedded-catalog-page">
     <header class="atlas-page-header">
       <a class="atlas-page-brand" href="./index.html" aria-label="SAP AI Adoption Atlas home">
         <img src="./assets/atlas-mark.png" alt="" width="40" height="38" />
@@ -33,110 +34,100 @@
     </nav>
 
     <main class="atlas-page-main">
-      <header class="atlas-page-intro">
-        <p class="atlas-kicker">Classification 1 of 4</p>
+      <header class="atlas-page-intro embedded-intro">
+        <p class="atlas-kicker">AI in SAP applications</p>
         <h1>Embedded AI Features</h1>
-        <p>Individual SAP-delivered AI features built into an SAP application experience. Your Cost Center Review Booklet financial business insights example belongs here.</p>
+        <p class="embedded-intro-lead">SAP-delivered AI placed directly inside the business application and workflow where people already work.</p>
+
+        <div class="embedded-definition-grid" aria-label="Embedded AI terminology">
+          <article class="embedded-definition">
+            <i data-lucide="layout-grid" aria-hidden="true"></i>
+            <div>
+              <h2>What is embedded AI?</h2>
+              <p>An AI capability delivered within an SAP product experience, using that application's business context, authorisations, data, and process controls. Examples include summaries, recommendations, matching, forecasting, natural-language search, and governed draft creation.</p>
+            </div>
+          </article>
+          <article class="embedded-definition">
+            <i data-lucide="workflow" aria-hidden="true"></i>
+            <div>
+              <h2>What is an embedded agent?</h2>
+              <p>An agentic capability surfaced in an SAP application that can reason across multiple steps and propose or perform supported actions under SAP roles, approvals, and audit controls. An embedded agent is one form of embedded AI; most records in this catalogue are features, not agents.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="embedded-evidence-note">
+          <i data-lucide="shield-check" aria-hidden="true"></i>
+          <p><strong>Edition evidence rule:</strong> Public Cloud or Private Cloud is marked as confirmed only when the SAP source record explicitly names that S/4HANA Cloud edition. Capabilities delivered in another SAP product are labelled as a separate product, and ambiguous S/4HANA records remain marked for validation.</p>
+        </div>
       </header>
 
-      <section class="atlas-page-band soft" id="embedded-ai">
+      <section class="atlas-page-band soft embedded-catalogue" id="catalogue">
         <div class="atlas-band-inner">
-          <div class="atlas-band-heading">
-            <h2>What belongs in this layer</h2>
-            <p>Start here when SAP already owns the application experience, business authorization, and process context.</p>
+          <div class="embedded-catalogue-heading">
+            <div>
+              <p class="atlas-kicker">Official-source snapshot · 13 July 2026</p>
+              <h2>Explore all <span data-embedded-total>286</span> embedded AI features</h2>
+              <p>Browse one continuous catalogue, organised into practical SAP modules. More cards appear automatically as you scroll.</p>
+            </div>
+            <div class="embedded-total-badge"><strong data-embedded-total>286</strong><span>verified records</span></div>
           </div>
-          <div class="atlas-fact-grid">
-            <article class="atlas-fact">
-              <i data-lucide="layout-grid" aria-hidden="true"></i>
-              <h3>Embedded assistance</h3>
-              <p>Summaries, natural-language filters, error explanations, search, and contextual prompts inside supported SAP applications.</p>
-            </article>
-            <article class="atlas-fact">
-              <i data-lucide="chart-no-axes-combined" aria-hidden="true"></i>
-              <h3>Business insight</h3>
-              <p>Generated narratives, variance explanations, prioritisation, and review-booklet commentary grounded in application data.</p>
-            </article>
-            <article class="atlas-fact">
-              <i data-lucide="file-check-2" aria-hidden="true"></i>
-              <h3>Controlled action</h3>
-              <p>Proposals and drafts remain behind SAP roles, workflow, validation, approval, and posting controls.</p>
-            </article>
-          </div>
-        </div>
-      </section>
 
-      <section class="atlas-page-band" id="capabilities">
-        <div class="atlas-band-inner">
-          <div class="atlas-band-heading">
-            <h2>Explore examples, then browse all 286 records</h2>
-            <p>The cards below explain representative adoption patterns. The complete official-source snapshot holds every record classified as Embedded AI Feature.</p>
+          <div class="embedded-filter-deck" aria-label="Embedded AI catalogue filters">
+            <label class="embedded-search-field">
+              <span class="embedded-sr-only">Search embedded AI features</span>
+              <i data-lucide="search" aria-hidden="true"></i>
+              <input type="search" data-embedded-search placeholder="Search 286 features" autocomplete="off" />
+            </label>
+            <label class="embedded-select-field">
+              <span>SAP module</span>
+              <select data-embedded-module>
+                <option value="">All modules</option>
+              </select>
+            </label>
+            <label class="embedded-select-field">
+              <span>Availability</span>
+              <select data-embedded-availability>
+                <option value="">All availability</option>
+                <option value="Generally Available">Generally Available</option>
+                <option value="Beta">Beta</option>
+                <option value="Early Adopter / EAC">Early Adopter / EAC</option>
+              </select>
+            </label>
+            <label class="embedded-select-field">
+              <span>Commercial</span>
+              <select data-embedded-commercial>
+                <option value="">All commercial models</option>
+                <option value="Base">Base</option>
+                <option value="Premium">Premium</option>
+                <option value="Unspecified">Unspecified</option>
+              </select>
+            </label>
+            <button class="embedded-reset" type="button" data-embedded-clear>
+              <i data-lucide="rotate-ccw" aria-hidden="true"></i><span>Reset</span>
+            </button>
           </div>
-          <div class="atlas-capability-list" data-capability-list="apps" data-categories="Embedded SAP app AI|Finance close and reporting"></div>
-          <p class="atlas-inventory-link"><a href="./docs/SAP-AI-Content-Inventory-2026-07-13.html?classification=Embedded%20AI%20Feature">Browse all 286 Embedded AI Feature records</a></p>
-        </div>
-      </section>
 
-      <section class="atlas-page-band blue" id="finance-close">
-        <div class="atlas-band-inner">
-          <div class="atlas-band-heading">
-            <h2>Finance close and reporting</h2>
-            <p>The strongest first customer conversation is read-only insight, followed by governed draft work only where SAP provides the control path.</p>
+          <div class="embedded-result-row">
+            <div class="embedded-status-key" aria-label="Availability legend">
+              <span class="ga"><i></i>Generally Available &middot; 270</span>
+              <span class="beta"><i></i>Beta &middot; 11</span>
+              <span class="eac"><i></i>Early Adopter / EAC &middot; 5</span>
+            </div>
+            <p data-embedded-summary aria-live="polite">Showing 0 of 286 records</p>
           </div>
-          <div class="atlas-step-grid">
-            <article class="atlas-step">
-              <i data-lucide="scan-search" aria-hidden="true"></i>
-              <h3>Analyze</h3>
-              <p>Explain cost-center movements, account variances, and review-booklet exceptions.</p>
-            </article>
-            <article class="atlas-step">
-              <i data-lucide="message-square-text" aria-hidden="true"></i>
-              <h3>Draft commentary</h3>
-              <p>Generate close notes and management narratives from governed SAP context.</p>
-            </article>
-            <article class="atlas-step">
-              <i data-lucide="file-pen-line" aria-hidden="true"></i>
-              <h3>Create a draft</h3>
-              <p>Prepare journal or posting proposals only where the supported application allows it.</p>
-            </article>
-            <article class="atlas-step">
-              <i data-lucide="badge-check" aria-hidden="true"></i>
-              <h3>Retain accountability</h3>
-              <p>Human review, approval, audit evidence, and SAP posting controls remain in force.</p>
-            </article>
-          </div>
-        </div>
-      </section>
 
-      <section class="atlas-page-band soft" id="edition-check">
-        <div class="atlas-band-inner">
-          <div class="atlas-band-heading">
-            <h2>Validate the edition before promising the capability</h2>
-            <p>The same business idea does not guarantee the same delivery path in Public Cloud and Private Cloud.</p>
-          </div>
-          <div class="atlas-edition-grid">
-            <article class="atlas-edition">
-              <h3>Public Cloud</h3>
-              <p>Check the current tenant release, supported app or IAM app, business catalog, role assignment, feature activation, and AI commercial entitlement.</p>
-            </article>
-            <article class="atlas-edition">
-              <h3>Private Cloud</h3>
-              <p>Check the installed release and feature package, SAP Help scope, embedded AI setup, BTP connectivity, identity path, and commercial terms.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+          <div class="embedded-module-sections" data-embedded-catalogue></div>
 
-      <section class="atlas-page-band" id="sources">
-        <div class="atlas-band-inner">
-          <div class="atlas-band-heading">
-            <h2>SAP source watch</h2>
-            <p>Primary references for the application capability records on this page.</p>
+          <div class="embedded-load-region">
+            <div class="embedded-scroll-sentinel" data-embedded-sentinel aria-hidden="true"></div>
+            <button class="embedded-load-more" type="button" data-embedded-load-more>Load more records</button>
+            <p data-embedded-complete hidden>All matching records are shown.</p>
           </div>
-          <div class="atlas-source-registry" data-source-registry data-source-types="Fiori AI|Finance|Help"></div>
         </div>
       </section>
     </main>
 
-    <footer class="atlas-page-footer">SAP AI Adoption Atlas</footer>
+    <footer class="atlas-page-footer">SAP AI Adoption Atlas · Embedded AI source snapshot</footer>
   </body>
 </html>
