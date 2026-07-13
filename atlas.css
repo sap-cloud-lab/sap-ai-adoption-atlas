@@ -749,6 +749,11 @@ a {
 }
 
 .atlas-path-architecture {
+  min-height: 52px;
+}
+
+.atlas-path-adoption {
+  min-height: 52px;
   margin-bottom: 16px;
   padding-bottom: 12px;
   border-bottom: 1px solid rgba(147, 200, 244, 0.16);
@@ -1197,10 +1202,18 @@ a {
     color: var(--atlas-blue);
   }
 
-  .atlas-path-architecture {
+  .atlas-path-adoption {
     margin-bottom: 8px;
-    padding: 0 8px 8px;
+    padding: 0 0 8px;
     border-bottom-color: var(--atlas-line);
+  }
+
+  .atlas-path-architecture {
+    min-height: 38px;
+  }
+
+  .atlas-path-adoption {
+    min-height: 38px;
   }
 
   .atlas-paths > p.atlas-path-section-label {
