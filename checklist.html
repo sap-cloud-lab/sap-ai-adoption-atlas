@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website Inclusion Checklist - Extensibility Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="checklist">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Extensibility Explorer home">
+        <span class="sap-logo" aria-label="SAP">SAP</span>
+      </a>
+      <a class="brand-title" href="index.html">Extensibility Explorer</a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="assets.html">Assets</a>
+        <a href="accelerators.html">Accelerators</a>
+        <a class="ai-entry" href="ai.html">AI</a>
+      </nav>
+    </header>
+
+    <main class="checklist-page">
+      <section class="checklist-hero" aria-label="Accelerator checklist introduction">
+        <div>
+          <p class="eyebrow">Checklist</p>
+          <h1>Website Inclusion Checklist</h1>
+          <p>Review each item, tick Include, then classify it as an Asset or Accelerator for the website.</p>
+        </div>
+        <div class="checklist-summary" aria-label="Checklist summary">
+          <span id="acceleratorTotal">83 rows</span>
+          <strong id="selectedCount">0 selected</strong>
+          <span id="assetCount">0 assets</span>
+          <span id="acceleratorCategoryCount">0 accelerators</span>
+          <span id="laneCount">0 lane mapped</span>
+        </div>
+      </section>
+
+      <section class="checklist-controls" aria-label="Checklist controls">
+        <label class="search-box checklist-search">
+          <span class="sr-only">Search accelerators</span>
+          <input id="acceleratorSearch" type="search" placeholder="Search accelerators" />
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m16.5 16.5 4 4" /></svg>
+        </label>
+        <label class="select-filter">
+          <span>Module</span>
+          <select id="moduleFilter">
+            <option value="">All modules</option>
+          </select>
+        </label>
+        <button class="filter-toggle-button" id="selectedOnlyToggle" type="button" aria-pressed="false">
+          Show selected only
+        </button>
+      </section>
+
+      <section class="checklist-table-card" aria-label="Accelerator inclusion table">
+        <div class="table-scroll">
+          <table class="checklist-table">
+            <thead>
+              <tr>
+                <th>Include</th>
+                <th>Category</th>
+                <th>Extensibility Type</th>
+                <th>Module</th>
+                <th>Product Area</th>
+                <th>Functionality</th>
+                <th>Item</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody id="acceleratorTableBody"></tbody>
+          </table>
+        </div>
+        <p class="empty-state" id="acceleratorEmptyState" hidden>No matching accelerators found.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Selections are saved in this browser so you can review the list over multiple passes.</span>
+      <a href="assets.html">Assets</a>
+    </footer>
+
+    <script src="accelerators-data.js"></script>
+    <script src="accelerators.js"></script>
+  </body>
+</html>

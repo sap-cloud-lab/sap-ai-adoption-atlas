@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SAP-Delivered Agents | AI Adoption Atlas</title>
+    <meta
+      name="description"
+      content="Explore every current SAP Discovery Center AI agent and agent package, then open a detailed implementation, architecture, licensing, rollout, and adoption blueprint."
+    />
+    <link rel="stylesheet" href="./atlas-pages.css" />
+    <link rel="stylesheet" href="./joule-agents.css" />
+    <script defer src="./vendor/lucide.min.js"></script>
+    <script defer src="./joule-agents-data.js"></script>
+    <script defer src="./joule-process-landscape.js"></script>
+    <script defer src="./joule-agents.js"></script>
+  </head>
+  <body class="joule-page">
+    <header class="atlas-page-header">
+      <a class="atlas-page-brand" href="./index.html" aria-label="AI Adoption Atlas home">
+        <img src="./assets/atlas-mark-v2.png" alt="" width="40" height="38" />
+        <strong>AI Adoption Atlas</strong>
+      </a>
+      <a class="atlas-home-link" href="./index.html"><i data-lucide="home" aria-hidden="true"></i><span>Atlas home</span></a>
+    </header>
+
+    <nav class="atlas-section-nav" aria-label="Atlas sections">
+      <a href="./ai-apps.html">Embedded AI</a>
+      <a href="./ai-joule-capabilities.html">Joule Capabilities</a>
+      <a class="active" href="./ai-joule-agents.html" aria-current="page">SAP Agents</a>
+      <a href="./ai-joule-assistants.html">Joule Assistants</a>
+      <a href="./ai-architecture.html">SAP AI Architecture</a>
+      <a href="./ai-btp-foundation.html">Build &amp; Technology</a>
+      <a href="./ai-adoption-governance.html">Governance</a>
+      <a href="./ai-release-watch.html">Releases</a>
+    </nav>
+
+    <main class="atlas-page-main">
+      <section class="joule-universe" id="process-landscape" aria-labelledby="joule-agent-title">
+        <div class="joule-universe-inner">
+          <header class="joule-universe-heading">
+            <div class="joule-title-lockup">
+              <h1 id="joule-agent-title">SAP-Delivered Agents</h1>
+              <p>Classification 3 of 4: explore all 37 current SAP Discovery Center agent and agent-package records alongside the SAP process landscape.</p>
+            </div>
+            <a class="catalog-snapshot" href="https://discovery-center.cloud.sap/ai-catalog/?aiType=ai_agent_package,ai_agent" target="_blank" rel="noreferrer">
+              <i data-lucide="database" aria-hidden="true"></i>
+              <span>Discovery Center snapshot <strong data-snapshot-label>12 July 2026</strong></span>
+              <i data-lucide="external-link" aria-hidden="true"></i>
+            </a>
+          </header>
+
+          <div class="joule-control-deck" aria-label="Business process landscape filters">
+            <label class="joule-search">
+              <span class="sr-only">Search business processes</span>
+              <i data-lucide="search" aria-hidden="true"></i>
+              <input type="search" aria-label="Search 84 process tiles" placeholder="Search 84 process tiles" autocomplete="off" data-process-search />
+              <kbd aria-hidden="true">/</kbd>
+            </label>
+
+            <button class="joule-reset" type="button" data-reset-filters>
+              <i data-lucide="rotate-ccw" aria-hidden="true"></i>
+              Reset
+            </button>
+          </div>
+
+          <div class="joule-type-row">
+            <div class="agent-type-toggle" role="group" aria-label="Filter by process status">
+              <button type="button" class="active" data-status-filter="all" aria-pressed="true">All processes <span data-process-count="all"></span></button>
+              <button type="button" data-status-filter="agent-enabled" aria-pressed="false">Highlighted <span data-process-count="agent-enabled"></span></button>
+              <button type="button" data-status-filter="process-only" aria-pressed="false">Process only <span data-process-count="process-only"></span></button>
+            </div>
+            <div class="process-legend" aria-label="Process status legend">
+              <span><i data-lucide="sparkles" aria-hidden="true"></i>SAP-highlighted</span>
+              <span><i data-lucide="circle-minus" aria-hidden="true"></i>Process only</span>
+            </div>
+            <p data-result-summary aria-live="polite"></p>
+          </div>
+
+          <div class="agent-universe-layout">
+            <div class="agent-cloud-region">
+              <div class="process-row-stack" data-process-grid aria-label="SAP business process landscape"></div>
+              <div class="agent-empty" data-agent-empty hidden>
+                <i data-lucide="search-x" aria-hidden="true"></i>
+                <h2>No matching processes</h2>
+                <p>Change or reset the filters to see more business processes.</p>
+                <button type="button" data-reset-filters>Reset filters</button>
+              </div>
+              <div class="agent-cloud-footer">
+                <span><i data-lucide="sparkles" aria-hidden="true"></i>Highlights follow the SAP presentation</span>
+                <span><i data-lucide="circle-minus" aria-hidden="true"></i>Muted tiles are process context</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="process-drawer" data-process-preview aria-live="polite" aria-label="Selected highlighted process preview" hidden></aside>
+        </div>
+      </section>
+
+      <section class="catalog-reading-band" id="catalog-guide">
+        <div class="catalog-reading-inner">
+          <header>
+            <h2>Read the catalogue correctly</h2>
+            <p>The live SAP result set mixes individual agents and package-classified entries. Commercial blanks are unknowns, not free entitlements.</p>
+          </header>
+          <div class="catalog-reading-grid">
+            <article>
+              <strong>33</strong>
+              <h3>Individual AI agents</h3>
+              <p>Standalone <code>ai_agent</code> records in SAP Discovery Center.</p>
+            </article>
+            <article>
+              <strong>4</strong>
+              <h3>Agent package entries</h3>
+              <p>Customer Experience agents included in Joule Premium for Customer Experience.</p>
+            </article>
+            <article>
+              <strong>21</strong>
+              <h3>Beta records</h3>
+              <p>Validate tenant, region, programme access, support conditions, and commercial treatment.</p>
+            </article>
+            <article>
+              <strong>16</strong>
+              <h3>GA or EAC records</h3>
+              <p>Availability still depends on the listed product, edition, version, region, and contract.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-context-band">
+        <div class="portfolio-context-inner">
+          <div class="portfolio-context-copy">
+            <i data-lucide="scan-search" aria-hidden="true"></i>
+            <div>
+              <h2>Why this wall shows 84 process tiles and six highlights</h2>
+              <p>
+                The landscape above reproduces the SAP presentation model: every tile is a business process and only six Financial Closing Assistant capabilities are highlighted. The separate Discovery Center snapshot contains 37 agent and package records; those records are supporting evidence, not a replacement for the process wall.
+              </p>
+              <a href="https://www.sap.com/use-cases/joule-assistant/financial-closing-ai" target="_blank" rel="noreferrer">
+                Open SAP Financial Closing Assistant <i data-lucide="external-link" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-status-list" aria-label="Financial Closing Assistant portfolio status">
+            <div><span>Accounting Accruals Agent</span><strong class="confirmed">Catalogued · Beta</strong></div>
+            <div><span>Analytical Business Insights</span><strong>Feature package · not agent</strong></div>
+            <div><span>Journal Entry</span><strong>Documented · no standalone record</strong></div>
+            <div><span>Intercompany Matching and Reconciliation</span><strong>Portfolio named</strong></div>
+            <div><span>Asset Accounting Anomaly Detection</span><strong>Portfolio named</strong></div>
+            <div><span>Financial Consistency Analysis</span><strong>Portfolio named</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band soft" id="agent-model">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading">
+            <h2>Four concepts to keep separate</h2>
+            <p>The entry point, the bounded operation, the goal-driven workflow, and the customer extension surface are not interchangeable.</p>
+          </div>
+          <div class="atlas-step-grid">
+            <article class="atlas-step"><i data-lucide="sparkles" aria-hidden="true"></i><h3>Joule</h3><p>The conversational entry point for supported information, navigation, skills, and agents.</p></article>
+            <article class="atlas-step"><i data-lucide="square-function" aria-hidden="true"></i><h3>Skills</h3><p>Bounded operations for a known intent and predictable execution path.</p></article>
+            <article class="atlas-step"><i data-lucide="workflow" aria-hidden="true"></i><h3>Agents</h3><p>Goal-driven work using context, reasoning, tools, controlled actions, and handoffs.</p></article>
+            <article class="atlas-step"><i data-lucide="blocks" aria-hidden="true"></i><h3>Joule Studio</h3><p>The separate design-time build surface for governed customer-specific skills and agents; it is not an agent classification. <a href="./ai-btp-foundation.html#joule-studio">Open Build &amp; Technology</a>.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band blue" id="control-boundary">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading">
+            <h2>Every blueprint uses the same control boundary</h2>
+            <p>Agent-specific pages replace the backend product and process content while retaining identity, least privilege, human approval, monitoring, and evidence controls.</p>
+          </div>
+          <div class="atlas-fact-grid">
+            <article class="atlas-fact"><i data-lucide="key-round" aria-hidden="true"></i><h3>Identity</h3><p>Resolve user, role, tenant, and destination before the agent accesses SAP data or operations.</p></article>
+            <article class="atlas-fact"><i data-lucide="shield-check" aria-hidden="true"></i><h3>Authority</h3><p>Separate retrieval, proposal, draft creation, approval, and final execution permissions.</p></article>
+            <article class="atlas-fact"><i data-lucide="notebook-tabs" aria-hidden="true"></i><h3>Evidence</h3><p>Retain source context, tool calls, decisions, approvals, handoffs, and outcomes for review.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band" id="sources">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>Primary SAP sources</h2><p>Each agent blueprint adds its own catalogue record, media, value material, and available setup documentation.</p></div>
+          <div class="atlas-source-registry">
+            <a href="https://discovery-center.cloud.sap/ai-catalog/?aiType=ai_agent_package,ai_agent" target="_blank" rel="noreferrer"><strong>SAP Discovery Center AI Catalog</strong><span>Live agent and package records</span></a>
+            <a href="https://www.sap.com/products/artificial-intelligence/ai-agents.html" target="_blank" rel="noreferrer"><strong>SAP Joule Agents</strong><span>Portfolio and operating model</span></a>
+            <a href="https://help.sap.com/docs/joule/serviceguide/technical-system-landscape" target="_blank" rel="noreferrer"><strong>Joule technical system landscape</strong><span>Common reference architecture</span></a>
+            <a href="https://learning.sap.com/courses/introducing-joule/getting-to-know-joule-agents" target="_blank" rel="noreferrer"><strong>SAP Learning: Getting to Know Joule Agents</strong><span>Agent foundations</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="atlas-page-footer">AI Adoption Atlas · Catalogue snapshot 12 July 2026</footer>
+  </body>
+</html>

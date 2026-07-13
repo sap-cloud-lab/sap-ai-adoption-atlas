@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joule Capabilities &amp; Product Integrations | AI Adoption Atlas</title>
+    <meta
+      name="description"
+      content="Search SAP-delivered Joule capabilities and product integrations, with product, domain, availability, commercial type, and direct SAP sources."
+    />
+    <link rel="stylesheet" href="./atlas-pages.css" />
+    <link rel="stylesheet" href="./joule-capabilities.css" />
+    <script defer src="./vendor/lucide.min.js"></script>
+    <script defer src="./joule-capabilities-data.js"></script>
+    <script defer src="./joule-capabilities.js"></script>
+  </head>
+  <body class="joule-capabilities-page">
+    <header class="atlas-page-header">
+      <a class="atlas-page-brand" href="./index.html" aria-label="AI Adoption Atlas home">
+        <img src="./assets/atlas-mark-v2.png" alt="" width="40" height="38" />
+        <strong>AI Adoption Atlas</strong>
+      </a>
+      <a class="atlas-home-link" href="./index.html">
+        <i data-lucide="home" aria-hidden="true"></i><span>Atlas home</span>
+      </a>
+    </header>
+
+    <nav class="atlas-section-nav capabilities-section-nav" aria-label="AI classifications and supporting views">
+      <a href="./ai-apps.html">Embedded AI Features</a>
+      <a class="active" href="./ai-joule-capabilities.html" aria-current="page">Joule Capabilities</a>
+      <a href="./ai-joule-agents.html">SAP Agents</a>
+      <a href="./ai-joule-assistants.html">Joule Assistants</a>
+      <a href="./ai-architecture.html">SAP AI Architecture</a>
+      <a href="./ai-btp-foundation.html">Build &amp; Technology</a>
+      <a href="./ai-adoption-governance.html">Governance</a>
+      <a href="./ai-release-watch.html">Releases</a>
+    </nav>
+
+    <main class="atlas-page-main">
+      <header class="atlas-page-intro capabilities-intro">
+        <h1>Joule Capabilities &amp;<br />Product Integrations</h1>
+        <p>
+          SAP-delivered ways to use Joule for a bounded task, or to access Joule within a specific SAP product and experience. These are separate from goal-driven agents and role-based assistants.
+        </p>
+        <div class="capabilities-snapshot" aria-label="Catalogue snapshot summary">
+          <span><strong>81</strong> SAP catalogue records</span>
+          <span><strong>45</strong> named capabilities</span>
+          <span><strong>36</strong> integrations &amp; experiences</span>
+          <span>Snapshot <strong>13 July 2026</strong></span>
+        </div>
+      </header>
+
+      <section class="capability-definition-band" aria-labelledby="definition-title">
+        <div class="capability-definition-inner">
+          <header>
+            <h2 id="definition-title">Two different offering types sit in this classification</h2>
+            <p>The distinction prevents a product-level Joule integration from being mistaken for a single executable capability.</p>
+          </header>
+          <div class="capability-definition-grid">
+            <article>
+              <div class="definition-number">45</div>
+              <div>
+                <h3>Named task or general capability</h3>
+                <p>A specific SAP-catalogued task or Joule function, such as <strong>Allocation Run Results</strong>, <strong>Back Order Processing</strong>, or <strong>Creation of Fixed Asset Master Data</strong>.</p>
+              </div>
+            </article>
+            <article>
+              <div class="definition-number">36</div>
+              <div>
+                <h3>Joule experience or product integration</h3>
+                <p>A product-level Joule experience, such as <strong>Joule with SAP S/4HANA Cloud Public Edition</strong>, <strong>Joule with SAP Ariba solutions</strong>, or the <strong>Joule Work Mobile App</strong>.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="capability-catalogue-band" id="catalogue" aria-labelledby="catalogue-title">
+        <div class="capability-catalogue-inner">
+          <header class="catalogue-heading">
+            <div>
+              <h2 id="catalogue-title">Explore all 81 records</h2>
+              <p>Filter the SAP catalogue snapshot by offering type, product, business domain, or availability.</p>
+            </div>
+            <a class="catalogue-source" href="https://discovery-center.cloud.sap/ai-catalog/" target="_blank" rel="noreferrer">
+              <i data-lucide="database" aria-hidden="true"></i>
+              <span>SAP Discovery Center AI Catalog</span>
+              <i data-lucide="external-link" aria-hidden="true"></i>
+            </a>
+          </header>
+
+          <div class="availability-caveat" role="note">
+            <i data-lucide="info" aria-hidden="true"></i>
+            <p><strong>Availability needs validation.</strong> A catalogue record does not confirm that the capability is enabled or included in your contract. Check the listed product, edition, version, region, tenant activation, authorisations, commercial type, and any Beta or Early Adopter Care conditions.</p>
+          </div>
+
+          <div class="capability-controls" aria-label="Catalogue filters">
+            <label class="capability-search">
+              <span>Search catalogue</span>
+              <div>
+                <i data-lucide="search" aria-hidden="true"></i>
+                <input type="search" placeholder="Search name, description, product or ID" autocomplete="off" data-capability-search />
+              </div>
+            </label>
+
+            <div class="capability-type-toggle" role="group" aria-label="Filter by offering type">
+              <button class="active" type="button" data-type-filter="all" aria-pressed="true">All <span>81</span></button>
+              <button type="button" data-type-filter="Named task / general capability" aria-pressed="false">Named capabilities <span>45</span></button>
+              <button type="button" data-type-filter="Joule experience / product integration" aria-pressed="false">Integrations &amp; experiences <span>36</span></button>
+            </div>
+
+            <div class="capability-select-row">
+              <label>
+                <span>Product</span>
+                <select data-product-filter><option value="all">All products</option></select>
+              </label>
+              <label>
+                <span>Business domain</span>
+                <select data-domain-filter><option value="all">All domains</option></select>
+              </label>
+              <label>
+                <span>Availability</span>
+                <select data-availability-filter><option value="all">All availability</option></select>
+              </label>
+              <button class="capability-reset" type="button" data-reset-capability-filters>
+                <i data-lucide="rotate-ccw" aria-hidden="true"></i> Reset filters
+              </button>
+            </div>
+          </div>
+
+          <div class="capability-result-bar">
+            <p data-capability-result-summary aria-live="polite">Showing all 81 records</p>
+            <span>Official SAP source link on every record</span>
+          </div>
+
+          <div class="capability-record-list" data-capability-record-list></div>
+
+          <div class="capability-empty" data-capability-empty hidden>
+            <i data-lucide="search-x" aria-hidden="true"></i>
+            <h3>No matching catalogue records</h3>
+            <p>Change the search or reset the filters to see more SAP offerings.</p>
+            <button type="button" data-reset-capability-filters>Reset filters</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band soft" id="classification-boundary">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading">
+            <h2>Keep the neighbouring classifications separate</h2>
+            <p>These records describe bounded Joule capabilities and product access points. They do not replace the catalogues for agents or assistants.</p>
+          </div>
+          <div class="atlas-step-grid capability-boundary-grid">
+            <article class="atlas-step"><i data-lucide="square-function" aria-hidden="true"></i><h3>Capability</h3><p>Performs or supports a named, bounded task.</p></article>
+            <article class="atlas-step"><i data-lucide="plug-zap" aria-hidden="true"></i><h3>Product integration</h3><p>Makes Joule available within a product or user experience.</p></article>
+            <article class="atlas-step"><i data-lucide="workflow" aria-hidden="true"></i><h3>Agent</h3><p>Reasons and works toward a goal across steps and tools.</p></article>
+            <article class="atlas-step"><i data-lucide="users-round" aria-hidden="true"></i><h3>Assistant</h3><p>Provides a role or process experience that can coordinate capabilities and agents.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="atlas-page-footer">AI Adoption Atlas · SAP catalogue snapshot 13 July 2026</footer>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+category,name,status,url,what_it_shows,stack_or_tools
+Explorer and index,SAP Extensibility Explorer,Sunsetted,https://www.sap.com/extends4,Original explorer app now pointing to SAP GitHub samples,SAP web app
+Explorer and index,SAP-archive/cloud-s4-sample-ext,Archived,https://github.com/SAP-archive/cloud-s4-sample-ext,Historical support and scenario index for Extensibility Explorer,Scenario catalogue
+In-app / key user,Custom Logic Samples,Historical scenario,https://github.com/SAP-archive/cloud-s4-sample-ext,Custom logic through supported in-app extension points,SAP Fiori Custom Fields and Logic
+In-app / key user,In-App Sample for Reusable Elements,Historical scenario,https://github.com/SAP-archive/cloud-s4-sample-ext,Reusable in-app extension elements,SAP S/4HANA in-app tooling
+In-app / key user,Enable Custom Fields in the Purchasing Process,Historical scenario,https://github.com/SAP-archive/cloud-s4-sample-ext,Custom fields in a purchasing process,SAP Fiori extensibility apps
+In-app / key user,Custom Fields Mapping Implementation for the EDI Integration Process,Historical scenario,https://github.com/SAP-archive/cloud-s4-sample-ext,Custom field mapping in EDI integration,SAP S/4HANA in-app extensibility
+In-app / key user,SAP-samples/localization-toolkit-s4hana-cloud-tax-id-validation,Active,https://github.com/SAP-samples/localization-toolkit-s4hana-cloud-tax-id-validation,Tax ID validation using Custom Fields and Logic,Custom Fields and Logic
+Developer extensibility,SAP-samples/abap-platform-rap-workshops,Active,https://github.com/SAP-samples/abap-platform-rap-workshops,RAP workshop collection for developer and side-by-side extensibility,ABAP Cloud and RAP
+Developer extensibility,SAP-samples/abap-platform-rap630,Active,https://github.com/SAP-samples/abap-platform-rap630,RAP630 developer extensibility workshop,ABAP Cloud and RAP
+Developer extensibility,SAP-samples/teched2024-DT280,Active,https://github.com/SAP-samples/teched2024-DT280,Cloud ERP extensibility with on-stack developer extensibility,ABAP Cloud and RAP
+Developer extensibility,SAP-samples/teched2025-DT261,Active,https://github.com/SAP-samples/teched2025-DT261,Build on-stack extensions with ABAP Cloud in SAP Cloud ERP,ABAP Cloud and RAP
+Developer extensibility,SAP-samples/teched2023-DT264,Active,https://github.com/SAP-samples/teched2023-DT264,ABAP Cloud model and RAP BO extension examples,ABAP Cloud and RAP
+Developer extensibility,SAP-samples/cross-stack-partner-reference-extension,Active,https://github.com/SAP-samples/cross-stack-partner-reference-extension,Cross-stack side-by-side CAP app plus on-stack ABAP Cloud extension,CAP and ABAP Cloud
+Side-by-side,SAP-samples/cloud-extension-s4hana-business-process,Active,https://github.com/SAP-samples/cloud-extension-s4hana-business-process,Event-driven business process extension on SAP BTP,CAP and messaging
+Side-by-side,SAP-samples/cloud-extension-s4hana-cloud-business-process,Archived,https://github.com/SAP-samples/cloud-extension-s4hana-cloud-business-process,S/4HANA Cloud business process extension,CAP Event Mesh Fiori HANA
+Side-by-side,SAP-samples/btp-s4hana-nocode-extension,Active,https://github.com/SAP-samples/btp-s4hana-nocode-extension,No-code custom UI application and launchpad exposure,SAP Build Apps / AppGyver
+Side-by-side,SAP-samples/s4hana-cloud-extension-process-automation,Archived,https://github.com/SAP-samples/s4hana-cloud-extension-process-automation,Event-driven process automation and CAP extension,SAP Build Process Automation CAP
+Side-by-side,SAP-samples/btp-s4hana-kyma-business-process-extension,Archived,https://github.com/SAP-samples/btp-s4hana-kyma-business-process-extension,Business process extension on Kyma runtime,SAP BTP Kyma
+Side-by-side,SAP-samples/s4hana-cloud-ext-timesheet,Archived,https://github.com/SAP-samples/s4hana-cloud-ext-timesheet,Web app reading and writing working time,SAP BTP side-by-side app
+Side-by-side,SAP-samples/s4hana-ext-create-employee,Archived,https://github.com/SAP-samples/s4hana-ext-create-employee,One-click employee and IDP user creation app,SAP BTP Java SOAP integration
+Side-by-side,SAP-samples/s4hana-ext-cloud-label-printing,Archived,https://github.com/SAP-samples/s4hana-ext-cloud-label-printing,Label printing using SAP Print service,SAP Print service
+Side-by-side,SAP-samples/s4hana-ext-approve-payment-data,Archived,https://github.com/SAP-samples/s4hana-ext-approve-payment-data,Approval workflow for payment information changes,Workflow extension
+Side-by-side,SAP-archive/s4hana-ext-address-valid-app,Archived,https://github.com/SAP-archive/s4hana-ext-address-valid-app,Collaborative address validation using events,Cloud Foundry eventing
+Side-by-side,SAP-archive/s4hana-ext-business-event-pull,Archived,https://github.com/SAP-archive/s4hana-ext-business-event-pull,Created/changed sales order event handling,Business events
+Side-by-side,SAP-archive/s4hana-ext-microservice,Archived,https://github.com/SAP-archive/s4hana-ext-microservice,Address validation using an external microservice,Microservice extension
+Side-by-side,SAP-archive/s4hana-ext-authentication,Archived,https://github.com/SAP-archive/s4hana-ext-authentication,Authentication setup for S/4HANA Cloud extensions,Destination and XSUAA patterns
+Side-by-side,SAP-archive/s4hana-ext-order-app,Archived,https://github.com/SAP-archive/s4hana-ext-order-app,Web ordering app with read/write S/4HANA Cloud services,Web app and APIs
+Side-by-side,SAP-archive/s4hana-ext-product-catalog-ios,Archived,https://github.com/SAP-archive/s4hana-ext-product-catalog-ios,Native iOS product catalogue using S/4HANA Cloud data,iOS mobile app
+Side-by-side,SAP-archive/s4hana-ext-timesheet-ios,Archived,https://github.com/SAP-archive/s4hana-ext-timesheet-ios,Native iOS timesheet app for S/4HANA Cloud,iOS mobile app
+Side-by-side,SAP-samples/partner-reference-application-extension,Active,https://github.com/SAP-samples/partner-reference-application-extension,Multi-tenant extension application guidance on SAP BTP,CAP Fiori Cloud Foundry
+Side-by-side,SAP-samples/abap-platform-rap620,Active,https://github.com/SAP-samples/abap-platform-rap620,Side-by-side extension with SAP BTP ABAP Environment,ABAP BTP RAP OData SOAP
+Side-by-side,SAP-samples/abap-partner-reference-application,Active,https://github.com/SAP-samples/abap-partner-reference-application,Multi-tenant side-by-side app with S/4HANA Cloud integration,SAP BTP ABAP Environment
+Specific template,SAP-samples/s4hana-avc-ui-extension-template,Active,https://github.com/SAP-samples/s4hana-avc-ui-extension-template,Variant configuration UI extension template,VC UI extension mock runtime
+Specific template,SAP-samples/s4hana-online-validation-extension,Archived,https://github.com/SAP-samples/s4hana-online-validation-extension,Custom checks for SAP Online Validation Service,Online validation extension
+Specific template,SAP-samples/s4hana-ext-migrate-historical-data,Archived,https://github.com/SAP-samples/s4hana-ext-migrate-historical-data,Migrated sales order data example,Migration sample

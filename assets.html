@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assets - Extensibility Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="assets">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Extensibility Explorer home">
+        <span class="sap-logo" aria-label="SAP">SAP</span>
+      </a>
+      <a class="brand-title" href="index.html">Extensibility Explorer</a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="assets.html">Assets</a>
+        <a href="accelerators.html">Accelerators</a>
+        <a class="ai-entry" href="ai.html">AI</a>
+      </nav>
+    </header>
+
+    <section class="scenario-hero assets-hero" aria-label="Assets introduction">
+      <div class="scenario-hero-inner">
+        <div class="scenario-hero-copy">
+          <p class="eyebrow">Assets</p>
+          <h1>Knowledge Assets</h1>
+          <p>Checklist-tagged knowledge assets, decision notes, and public-cloud implementation guardrails.</p>
+          <p class="lane-note">Use these when the main value is guidance, readiness, or a design decision rather than source code.</p>
+        </div>
+        <div class="asset-stat-panel" aria-label="Asset coverage">
+          <span>Finance</span>
+          <span>Procurement</span>
+          <span>Reporting</span>
+        </div>
+      </div>
+    </section>
+
+    <main class="assets-page">
+      <a class="back-link" href="index.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5" /><path d="m12 19-7-7 7-7" /></svg>
+        Back to choices
+      </a>
+
+      <section class="scenario-browser asset-browser" aria-label="Extensibility assets">
+        <aside class="filter-rail" aria-label="Search and filters">
+          <label class="search-box">
+            <span class="sr-only">Search assets</span>
+            <input id="assetSearch" type="search" placeholder="Search assets" />
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m16.5 16.5 4 4" /></svg>
+          </label>
+
+          <div class="filter-block">
+            <p>Filter By</p>
+            <button class="filter-heading" type="button" aria-expanded="true" data-filter-toggle="assetLane">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+              Extensibility Option
+            </button>
+            <div class="filter-options" id="assetLaneFilters"></div>
+            <button class="filter-heading" type="button" aria-expanded="false" data-filter-toggle="assetSource">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+              Asset Category
+            </button>
+            <div class="filter-options" id="assetSourceFilters" hidden></div>
+          </div>
+        </aside>
+
+        <div class="scenario-results">
+          <div class="section-title">
+            <h2>Asset Library</h2>
+            <div class="section-title-actions">
+              <button class="filter-toggle-button" id="assetFilterToggle" type="button" aria-expanded="true">
+                Hide filters
+              </button>
+              <p id="assetCount"></p>
+            </div>
+          </div>
+          <div class="asset-grid" id="assetGrid"></div>
+          <p class="empty-state" id="assetEmptyState" hidden>No matching assets found.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Assets are selected from the checklist as knowledge and decision items.</span>
+      <a href="accelerators.html">Accelerators</a>
+    </footer>
+
+    <script src="assets-data.js"></script>
+    <script src="selected-content.js"></script>
+    <script src="assets.js"></script>
+  </body>
+</html>

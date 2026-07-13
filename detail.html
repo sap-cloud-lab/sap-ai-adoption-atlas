@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Implementation Guide - Extensibility Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="detail">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Extensibility Explorer home">
+        <span class="sap-logo" aria-label="SAP">SAP</span>
+      </a>
+      <a class="brand-title" href="index.html">Extensibility Explorer</a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="assets.html">Assets</a>
+        <a href="accelerators.html">Accelerators</a>
+        <a class="ai-entry" href="ai.html">AI</a>
+      </nav>
+    </header>
+
+    <main class="detail-page">
+      <a class="back-link" id="detailBack" href="index.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5" /><path d="m12 19-7-7 7-7" /></svg>
+        Back
+      </a>
+
+      <section class="detail-hero" aria-label="Implementation overview">
+        <div>
+          <div class="detail-tags">
+            <span class="asset-lane" id="detailLane">Extensibility</span>
+            <span class="pill" id="detailSourceType">Guide</span>
+          </div>
+          <h1 id="detailTitle">Implementation Guide</h1>
+          <p id="detailSummary"></p>
+        </div>
+        <div class="detail-actions" id="detailPrimaryActions"></div>
+      </section>
+
+      <section class="detail-grid" aria-label="Implementation details">
+        <article class="detail-panel">
+          <h2>What This Helps With</h2>
+          <p id="detailUseCase"></p>
+        </article>
+
+        <article class="detail-panel">
+          <h2>When To Choose It</h2>
+          <p id="detailWhenToUse"></p>
+        </article>
+
+        <article class="detail-panel implementation-panel">
+          <h2>Implementation Draft</h2>
+          <ol id="implementationSteps"></ol>
+        </article>
+
+        <article class="detail-panel technical-panel" id="technicalPanel" hidden>
+          <h2 id="technicalTitle">Technical Notes</h2>
+          <ul class="technical-list" id="technicalBullets"></ul>
+          <div class="code-note" id="technicalCodeWrap" hidden>
+            <p id="technicalCodeTitle"></p>
+            <pre><code id="technicalCode"></code></pre>
+          </div>
+        </article>
+
+        <aside class="detail-panel source-panel">
+          <h2>Sources And Next Steps</h2>
+          <div id="sourceList"></div>
+          <div class="detail-note">
+            <strong>Next asset step:</strong>
+            <span>When you share your own customer asset details, this same page can point to your GitHub source and show your implementation notes.</span>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Implementation text is a working draft based on the selected sample or public SAP reference.</span>
+      <a href="assets.html">Assets</a>
+    </footer>
+
+    <script src="assets-data.js"></script>
+    <script src="selected-content.js"></script>
+    <script src="app.js"></script>
+    <script src="detail.js"></script>
+  </body>
+</html>

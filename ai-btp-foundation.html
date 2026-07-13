@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Build &amp; Technology | SAP AI Adoption Atlas</title>
+    <meta name="description" content="The separate SAP build and technology layer: Joule Studio builders, SAP Business AI Platform products, and the customer-specific AI path." />
+    <link rel="stylesheet" href="./atlas-pages.css" />
+    <script defer src="./vendor/lucide.min.js"></script>
+    <script defer src="./app.js"></script>
+    <script defer src="./atlas-pages.js"></script>
+  </head>
+  <body>
+    <header class="atlas-page-header">
+      <a class="atlas-page-brand" href="./index.html" aria-label="SAP AI Adoption Atlas home">
+        <img src="./assets/atlas-mark.png" alt="" width="40" height="38" />
+        <strong>SAP AI Adoption Atlas</strong>
+      </a>
+      <a class="atlas-home-link" href="./index.html"><i data-lucide="home" aria-hidden="true"></i><span>Atlas home</span></a>
+    </header>
+
+    <nav class="atlas-section-nav" aria-label="Atlas sections">
+      <a href="./ai-apps.html">Embedded AI</a>
+      <a href="./ai-joule-capabilities.html">Joule Capabilities</a>
+      <a href="./ai-joule-agents.html">SAP Agents</a>
+      <a href="./ai-joule-assistants.html">Joule Assistants</a>
+      <a href="./ai-architecture.html">SAP AI Architecture</a>
+      <a class="active" href="./ai-btp-foundation.html" aria-current="page">Build &amp; Technology</a>
+      <a href="./ai-adoption-governance.html">Governance</a>
+      <a href="./ai-release-watch.html">Releases</a>
+    </nav>
+
+    <main class="atlas-page-main">
+      <header class="atlas-page-intro">
+        <p class="atlas-kicker">Separate from the four catalogue classifications</p>
+        <h1>Build &amp; Technology</h1>
+        <p>These are the SAP tools and platform products used to build, connect, deploy, and govern AI. They are not another type of customer-facing AI capability.</p>
+      </header>
+
+      <section class="atlas-page-band soft" id="joule-studio">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>Build with Joule Studio</h2><p>Joule Studio is SAP's development environment. Its two catalogue build tools sit beneath it; neither is a fifth AI capability classification.</p></div>
+          <div class="atlas-edition-grid">
+            <article class="atlas-edition"><h3>Agent Builder <span class="atlas-record-id">J308</span></h3><p>Design and extend governed custom agents that reason across context, tools, and multi-step workflows.</p><a href="https://discovery-center.cloud.sap/ai-catalog/" target="_blank" rel="noreferrer">Open SAP AI catalogue</a></article>
+            <article class="atlas-edition"><h3>Skill Builder <span class="atlas-record-id">J195</span></h3><p>Create bounded, predictable Joule skills for known intents and supported business actions.</p><a href="https://discovery-center.cloud.sap/ai-catalog/" target="_blank" rel="noreferrer">Open SAP AI catalogue</a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band" id="products">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>SAP AI Products &amp; Technology</h2><p>A separate 16-entry product and technology view. These components enable AI solutions; they do not describe the business capability received by the end user.</p></div>
+          <div class="atlas-fact-grid">
+            <article class="atlas-fact"><i data-lucide="blocks" aria-hidden="true"></i><h3>Build</h3><p>Joule Studio and SAP Integration Suite connect agents, applications, APIs, events, and workflows.</p></article>
+            <article class="atlas-fact"><i data-lucide="brain-circuit" aria-hidden="true"></i><h3>Contextualise &amp; reason</h3><p>SAP Business Data Cloud, Knowledge Graph, AI services, models, Generative AI Hub, and Document AI supply governed context and intelligence.</p></article>
+            <article class="atlas-fact"><i data-lucide="shield-check" aria-hidden="true"></i><h3>Govern &amp; operate</h3><p>SAP AI Agent Hub, Joule Studio runtime, LeanIX, Signavio, identity, and core platform services manage the operating layer.</p></article>
+          </div>
+          <p class="atlas-inventory-link"><a href="./docs/SAP-AI-Content-Inventory-2026-07-13.html?classification=SAP%20AI%20Product%20%2F%20Technology">Browse all 16 SAP AI Products &amp; Technology records</a></p>
+        </div>
+      </section>
+
+      <section class="atlas-page-band soft" id="patterns">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading">
+            <h2><span data-capability-count="btp">0</span> representative build and extension patterns</h2>
+            <p>These are architecture examples, not additional SAP-offering classifications.</p>
+          </div>
+          <div class="atlas-capability-list" data-capability-list="btp" data-categories="BTP AI Foundation|Customer-specific AI extension"></div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band blue" id="build-path">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>No SAP-delivered match? Custom-build the outcome</h2><p>Custom-built AI is the gap outcome after checking all four SAP-delivered classifications. It is not a finite SAP catalogue bucket.</p></div>
+          <div class="atlas-step-grid">
+            <article class="atlas-step"><i data-lucide="scan-search" aria-hidden="true"></i><h3>Discover</h3><p>Define the business decision, source data, control boundary, measurable value, and standard SAP alternatives.</p></article>
+            <article class="atlas-step"><i data-lucide="braces" aria-hidden="true"></i><h3>Prototype</h3><p>Use non-production data to validate grounding, prompt quality, tool contracts, and the user interaction.</p></article>
+            <article class="atlas-step"><i data-lucide="shield-check" aria-hidden="true"></i><h3>Govern</h3><p>Confirm identity, destinations, authorizations, data handling, model choice, logging, and human approval.</p></article>
+            <article class="atlas-step"><i data-lucide="rocket" aria-hidden="true"></i><h3>Operate</h3><p>Deploy through BTP, monitor usage and quality, manage versions, and retain a support and rollback path.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band soft" id="readiness">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>Technical readiness</h2><p>A prototype is not deployable until the customer account, entitlements, identity, connectivity, and commercial usage path are known.</p></div>
+          <div class="atlas-edition-grid">
+            <article class="atlas-edition"><h3>Platform</h3><p>BTP global account, subaccount, region, service entitlements, AI Core and AI Launchpad roles, destinations, and network path.</p></article>
+            <article class="atlas-edition"><h3>AI runtime</h3><p>Model availability, Generative AI Hub access, grounding source, prompt and model controls, usage metering, monitoring, and support ownership.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band" id="sources">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>SAP source watch</h2><p>Primary references for the BTP capability and commercial checks on this page.</p></div>
+          <div class="atlas-source-registry" data-source-registry data-source-types="BTP|AI Foundation|Commercial"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="atlas-page-footer">SAP AI Adoption Atlas</footer>
+  </body>
+</html>

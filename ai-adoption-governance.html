@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adoption and Governance | SAP AI Adoption Atlas</title>
+    <meta name="description" content="Public Cloud and Private Cloud adoption paths, readiness checks, governance controls, learning sequence, and evidence rules for SAP AI." />
+    <link rel="stylesheet" href="./atlas-pages.css" />
+    <script defer src="./vendor/lucide.min.js"></script>
+    <script defer src="./app.js"></script>
+    <script defer src="./atlas-pages.js"></script>
+  </head>
+  <body>
+    <header class="atlas-page-header">
+      <a class="atlas-page-brand" href="./index.html" aria-label="SAP AI Adoption Atlas home">
+        <img src="./assets/atlas-mark.png" alt="" width="40" height="38" />
+        <strong>SAP AI Adoption Atlas</strong>
+      </a>
+      <a class="atlas-home-link" href="./index.html"><i data-lucide="home" aria-hidden="true"></i><span>Atlas home</span></a>
+    </header>
+
+    <nav class="atlas-section-nav" aria-label="Atlas sections">
+      <a href="./ai-apps.html">Embedded AI</a>
+      <a href="./ai-joule-capabilities.html">Joule Capabilities</a>
+      <a href="./ai-joule-agents.html">SAP Agents</a>
+      <a href="./ai-joule-assistants.html">Joule Assistants</a>
+      <a href="./ai-architecture.html">SAP AI Architecture</a>
+      <a href="./ai-btp-foundation.html">Build &amp; Technology</a>
+      <a class="active" href="./ai-adoption-governance.html" aria-current="page">Governance</a>
+      <a href="./ai-release-watch.html">Releases</a>
+    </nav>
+
+    <main class="atlas-page-main">
+      <header class="atlas-page-intro">
+        <p class="atlas-kicker">Adopt with evidence</p>
+        <h1>Adoption &amp; Governance</h1>
+        <p>A repeatable customer method for edition validation, readiness, controlled pilots, production approval, evidence, and measurable business outcomes.</p>
+      </header>
+
+      <section class="atlas-page-band soft" id="edition-paths">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>Keep the deployment paths separate</h2><p>Use the same evaluation model for business value and risk, but verify availability and setup independently for each SAP cloud edition.</p></div>
+          <div class="atlas-edition-grid">
+            <article class="atlas-edition">
+              <h3>Public Cloud adoption path</h3>
+              <ul class="atlas-list">
+                <li>Identify the supported SAP app, IAM app, business catalog, and user role.</li>
+                <li>Confirm tenant release, feature activation, region, and commercial entitlement.</li>
+                <li>Pilot with representative data and a small role-based user group.</li>
+                <li>Measure outcome, review generated content, and document operational ownership.</li>
+              </ul>
+            </article>
+            <article class="atlas-edition">
+              <h3>Private Cloud adoption path</h3>
+              <ul class="atlas-list">
+                <li>Confirm installed release, feature package, and SAP Help support scope.</li>
+                <li>Validate embedded setup, BTP services, connectivity, identity, and authorizations.</li>
+                <li>Test the full technical path in a non-production landscape.</li>
+                <li>Plan lifecycle, upgrades, monitoring, support, and commercial consumption.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band" id="governance">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>Governance gates</h2><p>Every capability should have an accountable business owner and a clear control boundary before production use.</p></div>
+          <div class="atlas-step-grid">
+            <article class="atlas-step"><i data-lucide="database" aria-hidden="true"></i><h3>Data</h3><p>Classify source data, retention, grounding, residency, privacy, and downstream reuse.</p></article>
+            <article class="atlas-step"><i data-lucide="user-round-check" aria-hidden="true"></i><h3>Authority</h3><p>Define who can retrieve, propose, draft, approve, execute, and administer the capability.</p></article>
+            <article class="atlas-step"><i data-lucide="scale" aria-hidden="true"></i><h3>Decision</h3><p>Set human-review thresholds, prohibited uses, fallback behavior, and escalation routes.</p></article>
+            <article class="atlas-step"><i data-lucide="activity" aria-hidden="true"></i><h3>Operation</h3><p>Monitor quality, cost, model or release change, incidents, support ownership, and business value.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band blue" id="customer-questions">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>Customer readiness questions</h2><p>These questions determine whether to consume standard SAP AI, configure an agent, build on BTP, or stop and resolve a prerequisite.</p></div>
+          <div class="atlas-fact-grid">
+            <article class="atlas-fact"><i data-lucide="circle-help" aria-hidden="true"></i><h3>Business outcome</h3><p>What decision, delay, manual task, or control weakness should change, and how will value be measured?</p></article>
+            <article class="atlas-fact"><i data-lucide="cloud" aria-hidden="true"></i><h3>SAP landscape</h3><p>Which product, edition, tenant release, region, apps, roles, BTP account, and connected systems are involved?</p></article>
+            <article class="atlas-fact"><i data-lucide="badge-dollar-sign" aria-hidden="true"></i><h3>Commercial path</h3><p>Is it base entitlement, premium AI, AI Units, another subscription, or still subject to tenant validation?</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band soft" id="learning">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>Learn in deployment order</h2><p>Upskilling follows the same sequence used in customer delivery.</p></div>
+          <div class="atlas-step-grid">
+            <article class="atlas-step"><i data-lucide="map" aria-hidden="true"></i><h3>Map the portfolio</h3><p>Separate the four SAP-delivered capability classifications from Joule Studio builders, platform products, custom-built outcomes, and release-dependent content.</p></article>
+            <article class="atlas-step"><i data-lucide="monitor-play" aria-hidden="true"></i><h3>Demo standard AI</h3><p>Start with read-only embedded scenarios and capture the exact role, setup, edition, and source evidence.</p></article>
+            <article class="atlas-step"><i data-lucide="code-xml" aria-hidden="true"></i><h3>Build on BTP</h3><p>Learn Generative AI Hub, AI Core, destinations, identity, grounding, deployment, and operations.</p></article>
+            <article class="atlas-step"><i data-lucide="briefcase-business" aria-hidden="true"></i><h3>Package adoption</h3><p>Create repeatable discovery, readiness, pilot, risk, evidence, outcome, and release-review assets.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band" id="sources">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>Evidence hierarchy</h2><p>Use current SAP product documentation and tenant evidence before customer commitments.</p></div>
+          <div class="atlas-source-registry" data-source-registry data-source-types="Portfolio|Commercial|Help"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="atlas-page-footer">SAP AI Adoption Atlas</footer>
+  </body>
+</html>

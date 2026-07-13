@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joule Assistants | AI Adoption Atlas</title>
+    <meta
+      name="description"
+      content="Search the 54 Joule Assistants published by SAP, grouped by business domain with roadmap availability notes and direct SAP sources."
+    />
+    <link rel="stylesheet" href="./atlas-pages.css" />
+    <link rel="stylesheet" href="./joule-assistants.css" />
+    <script defer src="./vendor/lucide.min.js"></script>
+    <script defer src="./joule-assistants.js"></script>
+  </head>
+  <body class="assistant-page">
+    <header class="atlas-page-header">
+      <a class="atlas-page-brand" href="./index.html" aria-label="AI Adoption Atlas home">
+        <img src="./assets/atlas-mark-v2.png" alt="" width="40" height="38" />
+        <strong>AI Adoption Atlas</strong>
+      </a>
+      <a class="atlas-home-link" href="./index.html"><i data-lucide="home" aria-hidden="true"></i><span>Atlas home</span></a>
+    </header>
+
+    <nav class="atlas-section-nav" aria-label="Atlas sections">
+      <a href="./ai-apps.html">Embedded AI</a>
+      <a href="./ai-joule-capabilities.html">Joule Capabilities</a>
+      <a href="./ai-joule-agents.html">SAP Agents</a>
+      <a class="active" href="./ai-joule-assistants.html" aria-current="page">Joule Assistants</a>
+      <a href="./ai-architecture.html">SAP AI Architecture</a>
+      <a href="./ai-btp-foundation.html">Build &amp; Technology</a>
+      <a href="./ai-adoption-governance.html">Governance</a>
+      <a href="./ai-release-watch.html">Releases</a>
+    </nav>
+
+    <main class="atlas-page-main">
+      <section class="assistant-catalogue" aria-labelledby="assistant-title">
+        <div class="assistant-catalogue-inner">
+          <header class="assistant-hero">
+            <div>
+              <p class="atlas-kicker">Classification 4 of 4</p>
+              <h1 id="assistant-title">Joule Assistants</h1>
+              <p>Role- and process-based coordinators that bring together SAP-delivered agents, Joule skills, product actions, and business context around a broader objective.</p>
+            </div>
+            <div class="assistant-total" aria-label="54 assistants in this SAP catalogue snapshot">
+              <strong data-assistant-total>54</strong>
+              <span>SAP catalogue entries</span>
+            </div>
+          </header>
+
+          <aside class="assistant-caveat" aria-label="Availability caveat">
+            <i data-lucide="info" aria-hidden="true"></i>
+            <div>
+              <strong>Catalogue publication does not prove availability in your tenant.</strong>
+              <p>Planned dates remain SAP roadmap statements and may change. Before advising or implementing, verify the product, edition, release, region, programme access, entitlement, and current SAP delivery status.</p>
+            </div>
+          </aside>
+
+          <div class="assistant-filter-deck" aria-label="Joule Assistant catalogue filters">
+            <label class="assistant-search">
+              <span class="sr-only">Search Joule Assistants</span>
+              <i data-lucide="search" aria-hidden="true"></i>
+              <input type="search" placeholder="Search 54 assistants" autocomplete="off" data-assistant-search />
+            </label>
+            <label class="assistant-select">
+              <span>Business domain</span>
+              <select data-domain-filter><option value="all">All domains</option></select>
+            </label>
+            <label class="assistant-select">
+              <span>Availability</span>
+              <select data-status-filter>
+                <option value="all">All availability notes</option>
+                <option value="planned">GA planned</option>
+                <option value="eac">Early Adopter Care</option>
+                <option value="not-stated">Not stated</option>
+                <option value="verify">Catalogue / verify</option>
+              </select>
+            </label>
+            <button class="assistant-reset" type="button" data-reset-filters>
+              <i data-lucide="rotate-ccw" aria-hidden="true"></i>
+              Reset
+            </button>
+          </div>
+
+          <div class="assistant-result-row">
+            <div class="assistant-status-key" aria-label="Availability legend">
+              <span class="planned"><i></i>GA planned · 48</span>
+              <span class="eac"><i></i>EAC planned · 1</span>
+              <span class="unknown"><i></i>Not stated / verify · 5</span>
+            </div>
+            <p data-result-summary aria-live="polite">Showing all 54 assistants</p>
+          </div>
+
+          <div class="assistant-grid" data-assistant-grid aria-label="Joule Assistants catalogue"></div>
+          <div class="assistant-empty" data-assistant-empty hidden>
+            <i data-lucide="search-x" aria-hidden="true"></i>
+            <h2>No matching assistants</h2>
+            <p>Change or reset the filters to see more SAP catalogue entries.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band assistant-source-band" id="sources">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading">
+            <h2>Primary SAP sources</h2>
+            <p>Every card links to its specific SAP use-case page. These portfolio sources explain the wider assistant model and planned 2026 delivery.</p>
+          </div>
+          <div class="atlas-source-registry">
+            <a href="https://www.sap.com/products/artificial-intelligence/ai-assistant.html" target="_blank" rel="noreferrer"><strong>SAP Joule Assistants</strong><span>Current assistant portfolio catalogue</span></a>
+            <a href="https://www.sap.com/topics/events/sapphire/innovation-news-guide-2026" target="_blank" rel="noreferrer"><strong>SAP 2026 Innovation News Guide</strong><span>Roadmap and planned availability statements</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="atlas-page-footer">AI Adoption Atlas · Joule Assistants snapshot 13 July 2026</footer>
+  </body>
+</html>

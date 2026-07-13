@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Samples - Extensibility Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="samples">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Extensibility Explorer home">
+        <span class="sap-logo" aria-label="SAP">SAP</span>
+      </a>
+      <a class="brand-title" href="index.html">Extensibility Explorer</a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="assets.html">Assets</a>
+        <a class="active" href="accelerators.html">Accelerators</a>
+        <a class="ai-entry" href="ai.html">AI</a>
+      </nav>
+    </header>
+
+    <section class="scenario-hero" aria-label="Sample scenarios introduction">
+      <div class="scenario-hero-inner">
+        <div class="scenario-hero-copy">
+          <p class="eyebrow" id="laneEyebrow">Samples</p>
+          <h1 id="laneTitle">Sample Scenarios</h1>
+          <p id="laneBrief">Explore pre-built SAP S/4HANA extensibility examples. Search by scenario, technology, or pattern, then open an implementation guide before going to GitHub.</p>
+          <p class="lane-note" id="laneNote"></p>
+        </div>
+        <div class="hero-actions lane-switcher" aria-label="Change extensibility option">
+          <a href="samples.html?lane=inapp" data-lane-link="inapp">In-App</a>
+          <a href="samples.html?lane=developer" data-lane-link="developer">Developer</a>
+          <a href="samples.html?lane=side" data-lane-link="side">Side-by-Side</a>
+        </div>
+      </div>
+    </section>
+
+    <main class="samples-page">
+      <a class="back-link" href="index.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5" /><path d="m12 19-7-7 7-7" /></svg>
+        Back to choices
+      </a>
+
+      <section class="scenario-browser" aria-label="Sample repositories">
+        <aside class="filter-rail" aria-label="Search and filters">
+          <label class="search-box">
+            <span class="sr-only">Search samples</span>
+            <input id="sampleSearch" type="search" placeholder="Search" />
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m16.5 16.5 4 4" /></svg>
+          </label>
+
+          <div class="filter-block">
+            <p>Filter By</p>
+            <button class="filter-heading" type="button" aria-expanded="true" data-filter-toggle="status">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+              Status
+            </button>
+            <div class="filter-options" id="statusFilters"></div>
+            <button class="filter-heading" type="button" aria-expanded="false" data-filter-toggle="pattern">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+              Technologies
+            </button>
+            <div class="filter-options" id="patternFilters" hidden></div>
+          </div>
+        </aside>
+
+        <div class="scenario-results">
+          <div class="section-title">
+            <h2 id="sampleSectionTitle">Samples</h2>
+            <p id="sampleCount"></p>
+          </div>
+          <div class="accelerator-groups" id="acceleratorGroups">
+            <section class="accelerator-source-section" data-source-section="customer">
+              <button class="source-section-toggle" type="button" data-accelerator-section="customer" aria-expanded="true">
+                <span>
+                  <strong>Customer Accelerators</strong>
+                  <small>Your implementation cards for this extensibility option.</small>
+                </span>
+                <span class="source-section-count" id="customerAcceleratorCount">0 cards</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <div class="accelerator-section-body" id="customerAcceleratorBody">
+                <div class="sample-grid" id="customerSampleGrid"></div>
+                <p class="empty-state section-empty" id="customerEmptyState" hidden>No matching customer accelerators found.</p>
+              </div>
+            </section>
+
+            <section class="accelerator-source-section" data-source-section="sap">
+              <button class="source-section-toggle" type="button" data-accelerator-section="sap" aria-expanded="false">
+                <span>
+                  <strong>SAP Accelerators</strong>
+                  <small>SAP-referenced GitHub, setup, and sample cards.</small>
+                </span>
+                <span class="source-section-count" id="sapAcceleratorCount">0 cards</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <div class="accelerator-section-body" id="sapAcceleratorBody" hidden>
+                <div class="sample-grid" id="sapSampleGrid"></div>
+                <p class="empty-state section-empty" id="sapEmptyState" hidden>No matching SAP accelerators found.</p>
+              </div>
+            </section>
+          </div>
+          <p class="empty-state" id="emptyState" hidden>No matching samples found.</p>
+        </div>
+      </section>
+    </main>
+
+    <a class="help-button" href="https://github.com/SAP" target="_blank" rel="noreferrer">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.7 8.5 9.4 9.4 0 0 1-4.1-.9L3 20l1.2-4.6A8.2 8.2 0 0 1 3 11.5a8.5 8.5 0 0 1 18 0Z" /></svg>
+      Need Help?
+    </a>
+
+    <footer class="footer">
+      <span>Tip: older SAP examples may be archived, but they are still useful for understanding the pattern.</span>
+      <a href="index.html">Home</a>
+    </footer>
+
+    <script src="assets-data.js"></script>
+    <script src="selected-content.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

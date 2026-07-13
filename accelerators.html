@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accelerators - Extensibility Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="accelerator-library">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Extensibility Explorer home">
+        <span class="sap-logo" aria-label="SAP">SAP</span>
+      </a>
+      <a class="brand-title" href="index.html">Extensibility Explorer</a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="assets.html">Assets</a>
+        <a class="active" href="accelerators.html">Accelerators</a>
+        <a class="ai-entry" href="ai.html">AI</a>
+      </nav>
+    </header>
+
+    <section class="scenario-hero" aria-label="Accelerators introduction">
+      <div class="scenario-hero-inner">
+        <div class="scenario-hero-copy">
+          <p class="eyebrow">Accelerators</p>
+          <h1>Implementation Accelerators</h1>
+          <p>Browse every in-app, developer, and BTP accelerator in one place, then open the implementation draft for the card you need.</p>
+          <p class="lane-note">Cards tagged SAP are SAP-referenced GitHub or setup examples. Untagged cards are your customer accelerators.</p>
+        </div>
+        <div class="asset-stat-panel" aria-label="Accelerator lanes">
+          <span>In-App</span>
+          <span>Dev</span>
+          <span>BTP</span>
+        </div>
+      </div>
+    </section>
+
+    <main class="samples-page accelerator-library-page">
+      <a class="back-link" href="index.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5" /><path d="m12 19-7-7 7-7" /></svg>
+        Back to choices
+      </a>
+
+      <section class="scenario-browser" aria-label="Accelerator library">
+        <aside class="filter-rail" aria-label="Search and filters">
+          <label class="search-box">
+            <span class="sr-only">Search accelerators</span>
+            <input id="sampleSearch" type="search" placeholder="Search accelerators" />
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m16.5 16.5 4 4" /></svg>
+          </label>
+
+          <div class="filter-block">
+            <p>Filter By</p>
+            <button class="filter-heading" type="button" aria-expanded="true" data-filter-toggle="lane">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+              Extensibility Type
+            </button>
+            <div class="filter-options" id="laneFilters"></div>
+            <button class="filter-heading" type="button" aria-expanded="false" data-filter-toggle="status">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+              Source
+            </button>
+            <div class="filter-options" id="statusFilters" hidden></div>
+            <button class="filter-heading" type="button" aria-expanded="false" data-filter-toggle="pattern">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+              Topic
+            </button>
+            <div class="filter-options" id="patternFilters" hidden></div>
+          </div>
+        </aside>
+
+        <div class="scenario-results">
+          <div class="section-title">
+            <h2 id="sampleSectionTitle">All Accelerators</h2>
+            <p id="sampleCount"></p>
+          </div>
+          <div class="accelerator-groups" id="acceleratorGroups">
+            <section class="accelerator-source-section" data-source-section="customer">
+              <button class="source-section-toggle" type="button" data-accelerator-section="customer" aria-expanded="true">
+                <span>
+                  <strong>Customer Accelerators</strong>
+                  <small>Your in-app, developer, and BTP implementation cards.</small>
+                </span>
+                <span class="source-section-count" id="customerAcceleratorCount">0 cards</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <div class="accelerator-section-body" id="customerAcceleratorBody">
+                <div class="sample-grid" id="customerSampleGrid"></div>
+                <p class="empty-state section-empty" id="customerEmptyState" hidden>No matching customer accelerators found.</p>
+              </div>
+            </section>
+
+            <section class="accelerator-source-section" data-source-section="sap">
+              <button class="source-section-toggle" type="button" data-accelerator-section="sap" aria-expanded="false">
+                <span>
+                  <strong>SAP Accelerators</strong>
+                  <small>SAP-referenced GitHub, setup, and sample cards.</small>
+                </span>
+                <span class="source-section-count" id="sapAcceleratorCount">0 cards</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <div class="accelerator-section-body" id="sapAcceleratorBody" hidden>
+                <div class="sample-grid" id="sapSampleGrid"></div>
+                <p class="empty-state section-empty" id="sapEmptyState" hidden>No matching SAP accelerators found.</p>
+              </div>
+            </section>
+          </div>
+          <p class="empty-state" id="emptyState" hidden>No matching accelerators found.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Accelerators combine SAP-referenced examples and your selected customer implementation cards.</span>
+    </footer>
+
+    <script src="assets-data.js"></script>
+    <script src="selected-content.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

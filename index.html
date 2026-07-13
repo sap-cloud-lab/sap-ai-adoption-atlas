@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SAP AI Adoption Atlas</title>
+    <meta
+      name="description"
+      content="SAP AI Adoption Atlas: four SAP-delivered AI classifications, a separate customer-build lane, adoption governance, and release tracking."
+    />
+    <link rel="stylesheet" href="./atlas.css" />
+    <script defer src="./vendor/lucide.min.js"></script>
+    <script defer src="./atlas.js"></script>
+  </head>
+  <body>
+    <main class="atlas-gateway">
+      <section class="atlas-brand-stage" aria-labelledby="atlas-title">
+        <header class="atlas-header">
+          <a class="atlas-brand" href="./index.html" aria-label="SAP AI Adoption Atlas home">
+            <img src="./assets/atlas-mark-v2.png" alt="" width="34" height="34" />
+            <strong>SAP AI Adoption Atlas</strong>
+          </a>
+          <nav class="atlas-nav" id="atlas-primary-nav" aria-label="Primary navigation">
+            <a href="./ai-apps.html">Explore</a>
+            <a href="./ai-adoption-governance.html">Adoption paths</a>
+            <a href="./ai-btp-foundation.html">Build on BTP</a>
+            <a href="./ai-release-watch.html">Release watch</a>
+          </nav>
+          <button class="atlas-menu-button" type="button" aria-label="Open navigation" aria-controls="atlas-primary-nav" aria-expanded="false">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </header>
+
+        <div class="atlas-hero-art">
+          <div class="atlas-artwork">
+            <picture class="atlas-aperture-picture">
+              <img
+                class="atlas-aperture-fallback"
+                src="./assets/atlas-aperture-4k.png"
+                alt="The SAP AI Adoption Atlas aperture mark"
+              />
+            </picture>
+            <div class="atlas-pixel-motion" aria-hidden="true">
+              <img class="atlas-pixel-highlight atlas-pixel-highlight-logo" src="./assets/atlas-aperture-fallback.png" alt="" />
+              <img class="atlas-pixel-highlight atlas-pixel-highlight-document" src="./assets/atlas-aperture-fallback.png" alt="" />
+              <img class="atlas-pixel-highlight atlas-pixel-highlight-route" src="./assets/atlas-aperture-fallback.png" alt="" />
+              <img class="atlas-pixel-highlight atlas-pixel-highlight-network" src="./assets/atlas-aperture-fallback.png" alt="" />
+              <img class="atlas-pixel-highlight atlas-pixel-highlight-rings" src="./assets/atlas-aperture-fallback.png" alt="" />
+              <img class="atlas-pixel-highlight atlas-pixel-highlight-edge" src="./assets/atlas-aperture-fallback.png" alt="" />
+              <img class="atlas-pixel-highlight atlas-pixel-highlight-base" src="./assets/atlas-aperture-fallback.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="atlas-hero-copy">
+          <p class="atlas-eyebrow">Independent SAP AI field guide</p>
+          <h1 id="atlas-title">
+            <span>Know what SAP AI can do.</span>
+            <span>Know how to adopt it.</span>
+          </h1>
+          <p>Verified by product, edition, release, entitlement, and source.</p>
+          <button
+            class="atlas-ask-trigger"
+            id="atlas-ask-trigger"
+            type="button"
+            data-atlas-ask-trigger
+            aria-haspopup="dialog"
+            aria-controls="atlas-command-dialog"
+          >
+            <i data-lucide="sparkles" aria-hidden="true"></i>
+            <span>Ask the Atlas</span>
+          </button>
+        </div>
+
+        <nav class="atlas-paths" aria-label="SAP-delivered AI classifications">
+          <a class="atlas-path-feature atlas-path-architecture" href="./ai-architecture.html">
+            <i data-lucide="network" aria-hidden="true"></i>
+            <span><strong>SAP AI Architecture</strong></span>
+          </a>
+          <p>SAP-delivered AI catalogue</p>
+          <div class="atlas-path-grid">
+            <a href="./ai-apps.html">
+              <i data-lucide="layout-grid" aria-hidden="true"></i>
+              <span><strong>Embedded AI Features</strong><small>286 catalogue records</small></span>
+            </a>
+            <a href="./ai-joule-capabilities.html">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+              <span><strong>Joule Capabilities &amp; Product Integrations</strong><small>81 catalogue records</small></span>
+            </a>
+            <a href="./ai-joule-agents.html">
+              <i data-lucide="workflow" aria-hidden="true"></i>
+              <span><strong>SAP-Delivered Agents</strong><small>37 catalogue records</small></span>
+            </a>
+            <a href="./ai-joule-assistants.html">
+              <i data-lucide="messages-square" aria-hidden="true"></i>
+              <span><strong>Joule Assistants</strong><small>54 SAP.com entries</small></span>
+            </a>
+          </div>
+          <p class="atlas-path-section-label">Custom build</p>
+          <a class="atlas-path-feature atlas-path-build" href="./ai-btp-foundation.html">
+            <i data-lucide="layers-3" aria-hidden="true"></i>
+            <span><strong>Build &amp; Extend on BTP</strong></span>
+          </a>
+        </nav>
+
+        <dialog class="atlas-command-dialog" id="atlas-command-dialog" aria-labelledby="atlas-command-title">
+          <form class="atlas-command-panel" id="atlas-ask-form" role="search">
+            <header class="atlas-command-header">
+              <span class="atlas-command-heading">
+                <i data-lucide="sparkles" aria-hidden="true"></i>
+                <strong id="atlas-command-title">Ask the Atlas</strong>
+              </span>
+              <button class="atlas-command-close" id="atlas-command-close" type="button" aria-label="Close Ask the Atlas" title="Close">
+                <i data-lucide="x" aria-hidden="true"></i>
+              </button>
+            </header>
+            <div class="atlas-command-input">
+              <i data-lucide="search" aria-hidden="true"></i>
+              <label class="sr-only" for="atlas-query">Ask the Atlas</label>
+              <input
+                id="atlas-query"
+                name="atlas-query"
+                type="search"
+                value="What can I adopt in Public Edition?"
+                autocomplete="off"
+              />
+              <button type="submit" aria-label="Search the Atlas" title="Search the Atlas">
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </form>
+        </dialog>
+      </section>
+    </main>
+  </body>
+</html>

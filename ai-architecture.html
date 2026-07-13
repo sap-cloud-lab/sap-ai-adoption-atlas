@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SAP AI Architecture | SAP AI Adoption Atlas</title>
+    <meta
+      name="description"
+      content="Explore how Joule, SAP Knowledge Graph, SAP Business Data Cloud, SAP applications, non-SAP applications, and AI Foundation fit together."
+    />
+    <link rel="stylesheet" href="./atlas-pages.css" />
+    <link rel="stylesheet" href="./ai-architecture.css" />
+    <script defer src="./vendor/lucide.min.js"></script>
+    <script defer src="./ai-architecture.js"></script>
+  </head>
+  <body>
+    <header class="atlas-page-header">
+      <a class="atlas-page-brand" href="./index.html" aria-label="SAP AI Adoption Atlas home">
+        <img src="./assets/atlas-mark.png" alt="" width="40" height="38" />
+        <strong>SAP AI Adoption Atlas</strong>
+      </a>
+      <a class="atlas-home-link" href="./index.html"><i data-lucide="home" aria-hidden="true"></i><span>Atlas home</span></a>
+    </header>
+
+    <nav class="atlas-section-nav" aria-label="Atlas sections">
+      <a href="./ai-apps.html">Embedded AI</a>
+      <a href="./ai-joule-capabilities.html">Joule Capabilities</a>
+      <a href="./ai-joule-agents.html">SAP Agents</a>
+      <a href="./ai-joule-assistants.html">Joule Assistants</a>
+      <a class="active" href="./ai-architecture.html" aria-current="page">SAP AI Architecture</a>
+      <a href="./ai-btp-foundation.html">Build &amp; Technology</a>
+      <a href="./ai-adoption-governance.html">Governance</a>
+      <a href="./ai-release-watch.html">Releases</a>
+    </nav>
+
+    <main class="architecture-page">
+      <header class="architecture-intro">
+        <h1>SAP Business AI Architecture</h1>
+        <p>Joule connects intelligence, trusted data, and action across the enterprise.</p>
+        <div class="architecture-help" aria-label="How to use this architecture">
+          <span><i data-lucide="mouse-pointer-2" aria-hidden="true"></i> Hover for a definition</span>
+          <span><i data-lucide="panel-right-open" aria-hidden="true"></i> Select a component to drill down</span>
+        </div>
+      </header>
+
+      <section class="architecture-explorer" aria-labelledby="architecture-canvas-title">
+        <div class="architecture-toolbar">
+          <div>
+            <h2 id="architecture-canvas-title">Explore the architecture</h2>
+            <p>Use the layer filters or select any technology.</p>
+          </div>
+          <div class="architecture-filters" role="group" aria-label="Filter architecture layers">
+            <button class="is-active" type="button" data-layer-filter="all" aria-pressed="true">Overview</button>
+            <button type="button" data-layer-filter="business" aria-pressed="false">Business AI</button>
+            <button type="button" data-layer-filter="data" aria-pressed="false">Data &amp; context</button>
+            <button type="button" data-layer-filter="applications" aria-pressed="false">Applications</button>
+            <button type="button" data-layer-filter="foundation" aria-pressed="false">AI Foundation</button>
+          </div>
+        </div>
+
+        <div class="architecture-canvas" data-architecture-canvas>
+          <section class="architecture-band architecture-band--business" data-layer="business" aria-labelledby="business-ai-layer">
+            <div class="architecture-business-main">
+              <div class="architecture-business-heading">
+                <button class="architecture-layer-title architecture-node architecture-node--plain-light" type="button" data-node="sap-business-ai" data-title="SAP Business AI" aria-controls="architecture-inspector">
+                  <span id="business-ai-layer">SAP Business AI</span>
+                </button>
+                <button class="architecture-joule architecture-node architecture-node--plain-light" type="button" data-node="joule" aria-controls="architecture-inspector">
+                  <i data-lucide="sparkles" aria-hidden="true"></i><strong>Joule</strong>
+                </button>
+              </div>
+
+              <div class="architecture-agent-row" aria-label="Domain agents">
+                <button class="architecture-node architecture-node--agent" type="button" data-node="domain-agents" data-title="Finance Agents" aria-controls="architecture-inspector"><i data-lucide="bar-chart-3" aria-hidden="true"></i><span>Finance<br />Agents</span></button>
+                <button class="architecture-node architecture-node--agent" type="button" data-node="domain-agents" data-title="Spend Agents" aria-controls="architecture-inspector"><i data-lucide="shopping-cart" aria-hidden="true"></i><span>Spend<br />Agents</span></button>
+                <button class="architecture-node architecture-node--agent" type="button" data-node="domain-agents" data-title="Supply Chain Agents" aria-controls="architecture-inspector"><i data-lucide="truck" aria-hidden="true"></i><span>Supply Chain<br />Agents</span></button>
+                <button class="architecture-node architecture-node--agent" type="button" data-node="domain-agents" data-title="HR Agents" aria-controls="architecture-inspector"><i data-lucide="users" aria-hidden="true"></i><span>HR<br />Agents</span></button>
+                <button class="architecture-node architecture-node--agent" type="button" data-node="domain-agents" data-title="CX Agents" aria-controls="architecture-inspector"><i data-lucide="headphones" aria-hidden="true"></i><span>CX<br />Agents</span></button>
+              </div>
+
+              <button class="architecture-subheading architecture-node architecture-node--plain-light" type="button" data-node="embedded-ai" aria-controls="architecture-inspector">Embedded AI in Business Processes</button>
+              <div class="architecture-domain-grid" aria-label="Embedded AI domains">
+                <button class="architecture-node architecture-node--domain" type="button" data-node="embedded-ai" data-title="Finance Embedded AI" aria-controls="architecture-inspector"><i data-lucide="pie-chart" aria-hidden="true"></i><span>Finance</span></button>
+                <button class="architecture-node architecture-node--domain" type="button" data-node="embedded-ai" data-title="Spend Embedded AI" aria-controls="architecture-inspector"><i data-lucide="shopping-bag" aria-hidden="true"></i><span>Spend</span></button>
+                <button class="architecture-node architecture-node--domain" type="button" data-node="embedded-ai" data-title="Supply Chain Embedded AI" aria-controls="architecture-inspector"><i data-lucide="package" aria-hidden="true"></i><span>Supply Chain</span></button>
+                <button class="architecture-node architecture-node--domain" type="button" data-node="embedded-ai" data-title="Human Resources Embedded AI" aria-controls="architecture-inspector"><i data-lucide="users" aria-hidden="true"></i><span>Human Resources</span></button>
+                <button class="architecture-node architecture-node--domain" type="button" data-node="embedded-ai" data-title="Customer Experience Embedded AI" aria-controls="architecture-inspector"><i data-lucide="heart" aria-hidden="true"></i><span>Customer Experience</span></button>
+              </div>
+            </div>
+
+            <button class="architecture-custom-ai architecture-node" type="button" data-node="custom-ai" aria-controls="architecture-inspector">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+              <strong>Custom AI</strong>
+              <span>Agents&nbsp; &bull; &nbsp;Apps&nbsp; &bull; &nbsp;Workflows</span>
+            </button>
+          </section>
+
+          <div class="architecture-bridge-wrap" data-layer="data">
+            <span class="architecture-bridge-flow architecture-bridge-flow--up" aria-hidden="true"><i data-lucide="arrow-up"></i></span>
+            <button class="architecture-bridge architecture-node" type="button" data-node="knowledge-graph" aria-controls="architecture-inspector">
+              <i data-lucide="network" aria-hidden="true"></i><strong>SAP Knowledge Graph</strong>
+            </button>
+            <span class="architecture-bridge-flow architecture-bridge-flow--down" aria-hidden="true"><i data-lucide="arrow-down"></i></span>
+          </div>
+
+          <section class="architecture-band architecture-band--data" data-layer="data" aria-labelledby="business-data-layer">
+            <button class="architecture-data-title architecture-node" type="button" data-node="business-data-cloud" aria-controls="architecture-inspector">
+              <i data-lucide="database" aria-hidden="true"></i>
+              <span><strong id="business-data-layer">SAP Business<br />Data Cloud</strong><small>Trusted, semantically aligned<br />SAP and non-SAP data</small></span>
+            </button>
+            <div class="architecture-data-products" aria-label="Domain data products">
+              <button class="architecture-node architecture-node--data" type="button" data-node="domain-data-products" data-title="Finance Data Products" aria-controls="architecture-inspector"><i data-lucide="bar-chart-3" aria-hidden="true"></i><span>Finance</span></button>
+              <button class="architecture-node architecture-node--data" type="button" data-node="domain-data-products" data-title="Spend Data Products" aria-controls="architecture-inspector"><i data-lucide="shopping-cart" aria-hidden="true"></i><span>Spend</span></button>
+              <button class="architecture-node architecture-node--data" type="button" data-node="domain-data-products" data-title="Supply Chain Data Products" aria-controls="architecture-inspector"><i data-lucide="truck" aria-hidden="true"></i><span>Supply Chain</span></button>
+              <button class="architecture-node architecture-node--data" type="button" data-node="domain-data-products" data-title="HR Data Products" aria-controls="architecture-inspector"><i data-lucide="users" aria-hidden="true"></i><span>HR</span></button>
+              <button class="architecture-node architecture-node--data" type="button" data-node="domain-data-products" data-title="Customer Data Products" aria-controls="architecture-inspector"><i data-lucide="user" aria-hidden="true"></i><span>Customer</span></button>
+              <button class="architecture-node architecture-node--data" type="button" data-node="domain-data-products" data-title="Industry Data Products" aria-controls="architecture-inspector"><i data-lucide="factory" aria-hidden="true"></i><span>Industry</span></button>
+            </div>
+          </section>
+
+          <section class="architecture-applications-row" data-layer="applications" aria-label="Application landscape">
+            <div class="architecture-applications architecture-panel">
+              <button class="architecture-panel-title architecture-node architecture-node--plain" type="button" data-node="sap-applications" aria-controls="architecture-inspector"><i data-lucide="grid-2x2" aria-hidden="true"></i><strong>SAP Applications</strong></button>
+              <div class="architecture-app-grid">
+                <button class="architecture-node architecture-node--app" type="button" data-node="sap-applications" data-title="Cloud ERP & Finance" aria-controls="architecture-inspector"><i data-lucide="cloud" aria-hidden="true"></i><span>Cloud ERP<br />&amp; Finance</span></button>
+                <button class="architecture-node architecture-node--app" type="button" data-node="sap-applications" data-title="Spend & Business Network" aria-controls="architecture-inspector"><i data-lucide="network" aria-hidden="true"></i><span>Spend &amp;<br />Business Network</span></button>
+                <button class="architecture-node architecture-node--app" type="button" data-node="sap-applications" data-title="Supply Chain Management" aria-controls="architecture-inspector"><i data-lucide="package" aria-hidden="true"></i><span>Supply Chain<br />Management</span></button>
+                <button class="architecture-node architecture-node--app" type="button" data-node="sap-applications" data-title="Human Capital Management" aria-controls="architecture-inspector"><i data-lucide="users" aria-hidden="true"></i><span>Human Capital<br />Management</span></button>
+                <button class="architecture-node architecture-node--app" type="button" data-node="sap-applications" data-title="Customer Experience" aria-controls="architecture-inspector"><i data-lucide="user" aria-hidden="true"></i><span>Customer<br />Experience</span></button>
+              </div>
+            </div>
+
+            <button class="architecture-non-sap architecture-node architecture-panel" type="button" data-node="non-sap-applications" aria-controls="architecture-inspector">
+              <i data-lucide="cloud" aria-hidden="true"></i>
+              <span><strong>Non-SAP Applications</strong><small>Salesforce / Agentforce<br />Microsoft&nbsp; &bull; &nbsp;ServiceNow<br />Custom &amp; Legacy</small></span>
+            </button>
+          </section>
+
+          <section class="architecture-band architecture-band--foundation" data-layer="foundation" aria-labelledby="foundation-layer">
+            <button class="architecture-foundation-title architecture-node architecture-node--plain" type="button" data-node="ai-foundation" aria-controls="architecture-inspector">
+              <i data-lucide="layers" aria-hidden="true"></i><strong id="foundation-layer">AI Foundation on<br />SAP Business Technology Platform</strong>
+            </button>
+            <div class="architecture-foundation-services" aria-label="AI Foundation technologies">
+              <button class="architecture-node architecture-node--service" type="button" data-node="unified-ai-portal" aria-controls="architecture-inspector"><i data-lucide="grid-2x2" aria-hidden="true"></i><span>Unified<br />AI Portal</span></button>
+              <button class="architecture-node architecture-node--service" type="button" data-node="joule-studio" aria-controls="architecture-inspector"><i data-lucide="code-2" aria-hidden="true"></i><span>Joule<br />Studio</span></button>
+              <button class="architecture-node architecture-node--service" type="button" data-node="ai-core" aria-controls="architecture-inspector"><i data-lucide="hexagon" aria-hidden="true"></i><span>SAP AI<br />Core</span></button>
+              <button class="architecture-node architecture-node--service" type="button" data-node="generative-ai-hub" aria-controls="architecture-inspector"><i data-lucide="sparkles" aria-hidden="true"></i><span>generative<br />AI hub</span></button>
+              <button class="architecture-node architecture-node--service" type="button" data-node="ai-launchpad" aria-controls="architecture-inspector"><i data-lucide="rocket" aria-hidden="true"></i><span>SAP AI<br />Launchpad</span></button>
+              <button class="architecture-node architecture-node--service" type="button" data-node="document-ai" aria-controls="architecture-inspector"><i data-lucide="file-text" aria-hidden="true"></i><span>SAP Document<br />AI</span></button>
+              <button class="architecture-node architecture-node--service architecture-node--roadmap" type="button" data-node="ai-agent-hub" aria-controls="architecture-inspector"><i data-lucide="shield-check" aria-hidden="true"></i><span>SAP AI<br />Agent Hub</span></button>
+            </div>
+            <div class="architecture-foundation-rail" aria-label="AI Foundation lifecycle">Build&nbsp; &bull; &nbsp;Integrate&nbsp; &bull; &nbsp;Run&nbsp; &bull; &nbsp;Govern</div>
+          </section>
+        </div>
+
+        <div class="architecture-legend">
+          <span><b class="legend-swatch legend-swatch--solid"></b> Product or capability</span>
+          <span><b class="legend-swatch legend-swatch--dashed"></b> Availability varies / phased capability</span>
+          <span><i data-lucide="info" aria-hidden="true"></i> Grouping tiles are explained in the detail panel</span>
+        </div>
+      </section>
+    </main>
+
+    <div class="architecture-inspector-backdrop" data-inspector-backdrop aria-hidden="true"></div>
+    <aside class="architecture-inspector" id="architecture-inspector" aria-hidden="true" aria-labelledby="inspector-title" inert>
+      <header class="architecture-inspector-header">
+        <div>
+          <span class="architecture-inspector-type" data-inspector-type>Technology</span>
+          <h2 id="inspector-title" data-inspector-title>Explore a component</h2>
+        </div>
+        <button class="architecture-inspector-close" type="button" data-inspector-close aria-label="Close technology detail"><i data-lucide="x" aria-hidden="true"></i></button>
+      </header>
+      <div class="architecture-inspector-body">
+        <p class="architecture-inspector-summary" data-inspector-summary>Select any component in the architecture to learn what it does.</p>
+        <section><h3>Role in this architecture</h3><p data-inspector-role></p></section>
+        <section><h3>Example</h3><p data-inspector-example></p></section>
+        <section class="architecture-availability"><h3>Availability note</h3><p data-inspector-availability></p></section>
+      </div>
+      <footer class="architecture-inspector-footer">
+        <a data-inspector-source href="https://www.sap.com/products/artificial-intelligence.html" target="_blank" rel="noreferrer">Open official SAP source <i data-lucide="external-link" aria-hidden="true"></i></a>
+      </footer>
+    </aside>
+    <div class="architecture-tooltip" id="architecture-tooltip" role="tooltip" aria-hidden="true"></div>
+
+    <footer class="atlas-page-footer">SAP AI Adoption Atlas</footer>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Release Watch | SAP AI Adoption Atlas</title>
+    <meta name="description" content="SAP AI release tracking, 2608 watch items, evidence rules, customer actions, and official release sources." />
+    <link rel="stylesheet" href="./atlas-pages.css" />
+    <script defer src="./vendor/lucide.min.js"></script>
+    <script defer src="./app.js"></script>
+    <script defer src="./atlas-pages.js"></script>
+  </head>
+  <body>
+    <header class="atlas-page-header">
+      <a class="atlas-page-brand" href="./index.html" aria-label="SAP AI Adoption Atlas home">
+        <img src="./assets/atlas-mark.png" alt="" width="40" height="38" />
+        <strong>SAP AI Adoption Atlas</strong>
+      </a>
+      <a class="atlas-home-link" href="./index.html"><i data-lucide="home" aria-hidden="true"></i><span>Atlas home</span></a>
+    </header>
+
+    <nav class="atlas-section-nav" aria-label="Atlas sections">
+      <a href="./ai-apps.html">Embedded AI</a>
+      <a href="./ai-joule-capabilities.html">Joule Capabilities</a>
+      <a href="./ai-joule-agents.html">SAP Agents</a>
+      <a href="./ai-joule-assistants.html">Joule Assistants</a>
+      <a href="./ai-architecture.html">SAP AI Architecture</a>
+      <a href="./ai-btp-foundation.html">Build &amp; Technology</a>
+      <a href="./ai-adoption-governance.html">Governance</a>
+      <a class="active" href="./ai-release-watch.html" aria-current="page">Releases</a>
+    </nav>
+
+    <main class="atlas-page-main">
+      <header class="atlas-page-intro">
+        <p class="atlas-kicker">Track before promising</p>
+        <h1>Release Watch</h1>
+        <p>One place for 2608 and later SAP AI changes, with preview material kept separate from confirmed customer-ready capability.</p>
+      </header>
+
+      <section class="atlas-page-band soft" id="tracker">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>Release tracker structure</h2><p>Every item needs exact SAP wording, source evidence, edition, release, business area, access requirement, and customer action.</p></div>
+          <div class="atlas-table-wrap">
+            <table class="atlas-table">
+              <thead><tr><th>Bucket</th><th>What belongs here</th><th>Status rule</th><th>Customer action</th></tr></thead>
+              <tbody>
+                <tr><td>2608</td><td>AI-specific S/4HANA Cloud Public Edition 2608 items, application changes, role changes, and enablement tasks.</td><td>Preview until SAP Help or What's New confirms the delivered scope.</td><td>Assess tenant timing, roles, activation, entitlement, testing, and adoption impact.</td></tr>
+                <tr><td>What's New</td><td>New embedded AI, Joule, agent, finance, Fiori, and BTP items from SAP release sources.</td><td>Record the source date and distinguish announcement, roadmap, preview, and generally available content.</td><td>Promote into the relevant Atlas section only when edition, release, access, and source are known.</td></tr>
+                <tr><td>Learning updates</td><td>New SAP Learning journeys, Joule courses, AI Core guidance, and customer enablement material.</td><td>Keep learning availability separate from product availability.</td><td>Update the learning sequence without changing capability status.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band" id="watch-items">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>Current watch rules and items</h2><p>Watch content stays out of stable capability pages until its delivery facts are validated.</p></div>
+          <div class="atlas-release-list" data-release-list></div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band blue" id="promotion-rule">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>Promotion rule</h2><p>Move an item into the stable Atlas only when the product, edition, release, application or service, access path, commercial dependency, and primary source are known.</p></div>
+          <div class="atlas-fact-grid">
+            <article class="atlas-fact"><i data-lucide="badge-check" aria-hidden="true"></i><h3>Confirmed</h3><p>Delivered scope is supported by current SAP Help, What's New, product documentation, and tenant evidence.</p></article>
+            <article class="atlas-fact"><i data-lucide="telescope" aria-hidden="true"></i><h3>Watch</h3><p>Roadmap, early-release, preview, or announced content remains clearly labelled and separate.</p></article>
+            <article class="atlas-fact"><i data-lucide="calendar-sync" aria-hidden="true"></i><h3>Review</h3><p>Recheck time-sensitive availability, commercial terms, regions, and release parity before customer use.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band" id="catalogue-record">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>Release-dependent catalogue record</h2><p>The stable catalogue retains only the release-watch pattern required for customer planning.</p></div>
+          <div class="atlas-capability-list" data-capability-list="release" data-categories="Release Watch"></div>
+        </div>
+      </section>
+
+      <section class="atlas-page-band soft" id="sources">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>SAP release sources</h2><p>Primary references used to validate release-watch items.</p></div>
+          <div class="atlas-source-registry" data-source-registry data-source-types="Release|Help"></div>
+          <div class="atlas-source-registry">
+            <a href="https://pages.community.sap.com/topics/s4hana-cloud/product-releases" target="_blank" rel="noreferrer"><strong>SAP Community: S/4HANA Cloud Product Releases</strong><span>Release overview</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="atlas-page-footer">SAP AI Adoption Atlas</footer>
+  </body>
+</html>
