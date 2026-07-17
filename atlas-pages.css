@@ -545,6 +545,10 @@ a {
   outline: 0;
 }
 
+.atlas-page-band.blue .atlas-source-registry strong {
+  color: var(--page-ink);
+}
+
 .atlas-table-wrap {
   overflow-x: auto;
   border: 1px solid var(--page-line);

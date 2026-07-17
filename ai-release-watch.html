@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Release Watch | SAP AI Adoption Atlas</title>
-    <meta name="description" content="SAP AI release tracking, 2608 watch items, evidence rules, customer actions, and official release sources." />
-    <link rel="stylesheet" href="./atlas-pages.css" />
+    <meta name="description" content="SAP AI roadmap and release tracking, 2608 watch items, evidence rules, customer actions, and official SAP sources." />
+    <link rel="stylesheet" href="./atlas-pages.css?v=20260717-1" />
     <script defer src="./vendor/lucide.min.js"></script>
     <script defer src="./app.js"></script>
     <script defer src="./atlas-pages.js"></script>
@@ -34,8 +34,18 @@
       <header class="atlas-page-intro">
         <p class="atlas-kicker">Track before promising</p>
         <h1>Release Watch</h1>
-        <p>One place for 2608 and later SAP AI changes, with preview material kept separate from confirmed customer-ready capability.</p>
+        <p>One place for SAP's future AI roadmap, 2608 and later SAP AI changes, with planned and preview material kept separate from confirmed customer-ready capability.</p>
       </header>
+
+      <section class="atlas-page-band blue" id="sap-ai-roadmap">
+        <div class="atlas-band-inner">
+          <div class="atlas-band-heading"><h2>SAP Business AI roadmap</h2><p>Track SAP's planned AI direction through the official SAP Road Map Explorer, including the dedicated SAP Business AI strategic topic and upcoming innovations by line of business.</p></div>
+          <div class="atlas-source-registry">
+            <a href="https://roadmaps.sap.com/" target="_blank" rel="noreferrer"><strong>Open SAP Road Map Explorer</strong><span>Future SAP product innovations · SAP sign-in may be required</span></a>
+            <a href="https://pages.community.sap.com/topics/road-map-explorer" target="_blank" rel="noreferrer"><strong>SAP Business AI roadmap guidance</strong><span>Official SAP overview of the dedicated Business AI roadmap experience</span></a>
+          </div>
+        </div>
+      </section>
 
       <section class="atlas-page-band soft" id="tracker">
         <div class="atlas-band-inner">
@@ -44,6 +54,7 @@
             <table class="atlas-table">
               <thead><tr><th>Bucket</th><th>What belongs here</th><th>Status rule</th><th>Customer action</th></tr></thead>
               <tbody>
+                <tr><td>SAP Business AI roadmap</td><td>Planned AI strategy, development priorities, and upcoming innovations published through SAP Road Map Explorer.</td><td>Directional until the relevant SAP release documentation confirms delivered scope.</td><td>Filter by strategic topic, product, line of business, process, and planned delivery period; then validate before committing.</td></tr>
                 <tr><td>2608</td><td>AI-specific S/4HANA Cloud Public Edition 2608 items, application changes, role changes, and enablement tasks.</td><td>Preview until SAP Help or What's New confirms the delivered scope.</td><td>Assess tenant timing, roles, activation, entitlement, testing, and adoption impact.</td></tr>
                 <tr><td>What's New</td><td>New embedded AI, Joule, agent, finance, Fiori, and BTP items from SAP release sources.</td><td>Record the source date and distinguish announcement, roadmap, preview, and generally available content.</td><td>Promote into the relevant Atlas section only when edition, release, access, and source are known.</td></tr>
                 <tr><td>Learning updates</td><td>New SAP Learning journeys, Joule courses, AI Core guidance, and customer enablement material.</td><td>Keep learning availability separate from product availability.</td><td>Update the learning sequence without changing capability status.</td></tr>

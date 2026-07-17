@@ -4031,6 +4031,12 @@ body.evidence-dialog-open {
   margin-left: clamp(30px, 4vw, 70px);
 }
 
+@media (min-width: 1211px) {
+  .model-panel-customer .model-heading-with-toggle .deployment-toggle {
+    margin-top: clamp(34px, 4.8vh, 58px);
+  }
+}
+
 .model-heading h2 {
   margin: 0;
   color: #071a45;
@@ -4056,6 +4062,12 @@ body.evidence-dialog-open {
 
 .sap-architecture {
   max-width: 1250px;
+}
+
+@media (min-width: 1211px) and (min-height: 900px) {
+  .model-panel-sap .sap-architecture {
+    margin-top: clamp(32px, 4.5vh, 52px);
+  }
 }
 
 .customer-architecture {

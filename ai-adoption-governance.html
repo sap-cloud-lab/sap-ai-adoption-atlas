@@ -8,7 +8,7 @@
       name="description"
       content="An executive decision framework for choosing SAP Business AI, a managed custom AI platform, or a hybrid portfolio for SAP business processes."
     />
-    <link rel="stylesheet" href="./adoption-framework.css?v=20260717-9" />
+    <link rel="stylesheet" href="./adoption-framework.css?v=20260717-10" />
     <script defer src="./vendor/lucide.min.js"></script>
     <script defer src="./joule-agents-data.js"></script>
     <script defer src="./joule-agent-profiles.js"></script>
@@ -27,7 +27,11 @@
                 <img src="./assets/atlas-mark-v2.png" alt="" width="38" height="38" />
                 <strong>SAP AI Adoption Atlas</strong>
               </a>
-              <a class="af-back-link" href="./index.html"><span>Back to Atlas</span><i data-lucide="arrow-right" aria-hidden="true"></i></a>
+              <div class="af-header-actions">
+                <button class="af-evidence-button" type="button" data-open-evidence aria-haspopup="dialog" aria-controls="agent-evidence-dialog"><i data-lucide="calculator" aria-hidden="true"></i><span>Accruals Example</span></button>
+                <button class="af-evidence-button af-routes-button" type="button" data-open-agent-routes aria-haspopup="dialog" aria-controls="agent-routes-dialog"><i data-lucide="route" aria-hidden="true"></i><span>Agent Routes</span></button>
+                <a class="af-back-link" href="./index.html"><span>Back to Atlas</span><i data-lucide="arrow-right" aria-hidden="true"></i></a>
+              </div>
             </header>
 
             <div class="framework-home-content">
