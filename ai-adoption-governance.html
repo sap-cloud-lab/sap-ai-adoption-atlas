@@ -8,7 +8,7 @@
       name="description"
       content="An executive decision framework for choosing SAP Business AI, a managed custom AI platform, or a hybrid portfolio for SAP business processes."
     />
-    <link rel="stylesheet" href="./adoption-framework.css" />
+    <link rel="stylesheet" href="./adoption-framework.css?v=20260717-9" />
     <script defer src="./vendor/lucide.min.js"></script>
     <script defer src="./joule-agents-data.js"></script>
     <script defer src="./joule-agent-profiles.js"></script>
@@ -18,58 +18,158 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <div class="adoption-shell">
-      <aside class="adoption-rail" aria-label="Atlas navigation">
-        <a class="rail-brand" href="./index.html" aria-label="SAP AI Adoption Atlas home">
-          <img src="./assets/atlas-mark-v2.png" alt="" width="48" height="48" />
-          <strong>SAP AI Adoption Atlas</strong>
-        </a>
-
-        <nav class="rail-nav" aria-label="Atlas sections">
-          <a href="./ai-apps.html"><i data-lucide="layout-grid" aria-hidden="true"></i><span>AI in SAP Applications</span></a>
-          <a href="./ai-joule-agents.html"><i data-lucide="sparkles" aria-hidden="true"></i><span>Joule, Assistants &amp; Agents</span></a>
-          <a href="./ai-architecture.html"><i data-lucide="network" aria-hidden="true"></i><span>SAP AI Architecture</span></a>
-          <a class="active" href="./ai-adoption-governance.html" aria-current="page"><i data-lucide="route" aria-hidden="true"></i><span>Adoption Framework</span></a>
-          <a href="./ai-btp-foundation.html"><i data-lucide="layers-3" aria-hidden="true"></i><span>Build &amp; Extend on SAP BTP</span></a>
-          <a href="./ai-release-watch.html"><i data-lucide="calendar-days" aria-hidden="true"></i><span>Release Watch</span></a>
-        </nav>
-
-        <div class="rail-note">
-          <span>Evidence snapshot</span>
-          <strong>13 July 2026</strong>
-          <small>Validate tenant, contract, region, release, and current SAP policy before delivery.</small>
-        </div>
-      </aside>
-
       <div class="adoption-page">
-        <header class="adoption-header">
-          <a class="mobile-brand" href="./index.html" aria-label="SAP AI Adoption Atlas home">
-            <img src="./assets/atlas-mark-v2.png" alt="" width="38" height="38" />
-            <strong>SAP AI Adoption Atlas</strong>
-          </a>
-          <nav class="adoption-top-nav" id="adoption-top-nav" aria-label="Page navigation">
-            <a href="#decision">Decision tool</a>
-            <a href="#architectures">Three routes</a>
-            <a href="#accruals">Accruals example</a>
-            <a href="#agent-matrix">All agents</a>
-            <a href="#continuity">Commercial model</a>
-          </nav>
-          <button class="mobile-menu" type="button" aria-controls="adoption-top-nav" aria-expanded="false">
-            <i data-lucide="menu" aria-hidden="true"></i><span class="sr-only">Open page navigation</span>
-          </button>
-        </header>
-
         <main id="main-content">
-          <section class="framework-hero" id="framework" aria-labelledby="framework-title">
-            <div class="hero-copy">
+          <section class="framework-home af-screen" id="framework" data-framework-home aria-labelledby="framework-title">
+            <img class="af-aperture" src="./assets/atlas-aperture-4k.png" alt="" aria-hidden="true" />
+            <header class="af-screen-header">
+              <a class="af-brand" href="./index.html" aria-label="SAP AI Adoption Atlas home">
+                <img src="./assets/atlas-mark-v2.png" alt="" width="38" height="38" />
+                <strong>SAP AI Adoption Atlas</strong>
+              </a>
+              <a class="af-back-link" href="./index.html"><span>Back to Atlas</span><i data-lucide="arrow-right" aria-hidden="true"></i></a>
+            </header>
+
+            <div class="framework-home-content">
               <h1 id="framework-title">AI Adoption Framework</h1>
+              <p class="framework-home-lead">The answer is rarely SAP-only or custom-only.</p>
+              <p class="framework-home-story">
+                <span>Use SAP where native capability creates advantage.</span>
+                <span>Build custom where your process creates differentiation.</span>
+                <span>Combine both when the business needs a governed hybrid workspace.</span>
+              </p>
+
+              <div class="framework-principles" aria-label="Why, how, and where">
+                <article><strong>WHY</strong><p>Control cost and lock-in without giving up SAP value.</p></article>
+                <article><strong>HOW</strong><p>Match each use case to the right operating model.</p></article>
+                <article><strong>WHERE</strong><p>Use supported SAP interfaces and governed AI services.</p></article>
+              </div>
+
+              <div class="model-launcher" aria-label="Choose an SAP AI operating model">
+                <button class="model-launch model-launch-sap" type="button" data-open-model="sap-business-ai" aria-controls="operating-models">
+                  <i data-lucide="layout-grid" aria-hidden="true"></i><span>SAP BUSINESS AI</span><i data-lucide="arrow-right" aria-hidden="true"></i>
+                </button>
+                <button class="model-launch model-launch-customer" type="button" data-open-model="customer-ai-platform" aria-controls="operating-models">
+                  <i data-lucide="circle-dot" aria-hidden="true"></i><span>CUSTOMER AI PLATFORM</span><i data-lucide="arrow-right" aria-hidden="true"></i>
+                </button>
+                <button class="model-launch model-launch-hybrid" type="button" data-open-model="hybrid-ai-workspace" aria-controls="operating-models">
+                  <i data-lucide="blend" aria-hidden="true"></i><span>HYBRID AI WORKSPACE</span><i data-lucide="arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="operating-model-viewer" id="operating-models" data-active-model="sap-business-ai" hidden>
+            <img class="af-aperture" src="./assets/atlas-aperture-wide-5k.png" alt="" aria-hidden="true" />
+            <header class="af-screen-header">
+              <a class="af-brand" href="./index.html" aria-label="SAP AI Adoption Atlas home">
+                <img src="./assets/atlas-mark-v2.png" alt="" width="38" height="38" />
+                <strong>SAP AI Adoption Atlas</strong>
+              </a>
+              <div class="af-header-actions">
+                <button class="af-evidence-button" type="button" data-open-evidence aria-haspopup="dialog" aria-controls="agent-evidence-dialog"><i data-lucide="book-open-check" aria-hidden="true"></i><span>Agent Evidence</span></button>
+                <button class="af-evidence-button af-routes-button" type="button" data-open-agent-routes aria-haspopup="dialog" aria-controls="agent-routes-dialog"><i data-lucide="route" aria-hidden="true"></i><span>Agent Routes</span></button>
+                <button class="af-back-link af-back-button" type="button" data-back-framework><span>Back to Framework</span><i data-lucide="arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </header>
+
+            <nav class="model-switcher" role="tablist" aria-label="SAP AI operating models">
+              <button type="button" role="tab" data-model-tab="sap-business-ai" aria-controls="model-sap-business-ai" aria-selected="true"><i data-lucide="layout-grid" aria-hidden="true"></i><span>SAP BUSINESS AI</span><i data-lucide="arrow-right" aria-hidden="true"></i></button>
+              <button type="button" role="tab" data-model-tab="customer-ai-platform" aria-controls="model-customer-ai-platform" aria-selected="false"><i data-lucide="circle-dot" aria-hidden="true"></i><span>CUSTOMER AI PLATFORM</span><i data-lucide="arrow-right" aria-hidden="true"></i></button>
+              <button type="button" role="tab" data-model-tab="hybrid-ai-workspace" aria-controls="model-hybrid-ai-workspace" aria-selected="false"><i data-lucide="blend" aria-hidden="true"></i><span>HYBRID AI WORKSPACE</span><i data-lucide="arrow-right" aria-hidden="true"></i></button>
+            </nav>
+
+            <div class="model-panels">
+              <article class="model-panel model-panel-sap" id="model-sap-business-ai" data-model-panel="sap-business-ai" role="tabpanel" aria-labelledby="model-sap-title" tabindex="-1">
+                <header class="model-heading">
+                  <div><h2 id="model-sap-title">SAP Business AI Platform</h2><p>Use SAP-delivered intelligence where native context and controls create advantage.</p></div>
+                </header>
+
+                <div class="architecture-board sap-architecture" aria-label="SAP Business AI architecture">
+                  <div class="sap-main-flow architecture-flow">
+                    <article class="architecture-node foundation-node"><i data-lucide="user-round" aria-hidden="true"></i><strong>BUSINESS USER</strong><span>SAP app / Fiori</span></article>
+                    <span class="architecture-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                    <article class="architecture-node foundation-node"><i data-lucide="sparkles" aria-hidden="true"></i><strong>EMBEDDED JOULE</strong></article>
+                    <span class="architecture-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                    <article class="architecture-node architecture-node-focus foundation-node">
+                      <i data-lucide="network" aria-hidden="true"></i><strong>JOULE ORCHESTRATION</strong>
+                      <ul><li><i data-lucide="list-checks" aria-hidden="true"></i><span>Scenario catalog</span></li><li><i data-lucide="user-round" aria-hidden="true"></i><span>Role + context</span></li><li><i data-lucide="cloud" aria-hidden="true"></i><span>Grounding</span></li></ul>
+                    </article>
+                    <span class="architecture-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                    <article class="architecture-node foundation-node"><i data-lucide="box" aria-hidden="true"></i><strong>SAP AGENT<br />OR SKILL</strong></article>
+                    <span class="architecture-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                    <article class="architecture-node architecture-node-apps foundation-node"><i data-lucide="network" aria-hidden="true"></i><strong>CONNECTED SAP<br />BUSINESS APPLICATIONS</strong><span>All entitled products<br />relevant to the use case</span><a href="#agent-matrix" data-open-agent-routes>Open product scope<i data-lucide="arrow-right" aria-hidden="true"></i></a></article>
+                  </div>
+                  <div class="architecture-rail foundation-rail"><i data-lucide="cloud" aria-hidden="true"></i><span>SAP BTP FORMATION</span><b>&bull;</b><span>CLOUD IDENTITY SERVICES</span><b>&bull;</b><span>BUILD WORK ZONE</span><b>&bull;</b><span>ENTITLEMENTS</span></div>
+                  <div class="architecture-rail governance-rail"><span><i data-lucide="shield-check" aria-hidden="true"></i>AUTHORIZATIONS</span><b>&bull;</b><span><i data-lucide="file-text" aria-hidden="true"></i>AUDIT + MONITORING</span><b>&bull;</b><span><i data-lucide="users-round" aria-hidden="true"></i>HUMAN APPROVAL</span></div>
+                </div>
+              </article>
+
+              <article class="model-panel model-panel-customer" id="model-customer-ai-platform" data-model-panel="customer-ai-platform" role="tabpanel" aria-labelledby="model-customer-title" tabindex="-1" hidden>
+                <header class="model-heading model-heading-with-toggle">
+                  <div><h2 id="model-customer-title">Customer AI Platform</h2><p>Build customer-specific reasoning while SAP remains the governed system of record.</p></div>
+                  <div class="deployment-toggle" role="group" aria-label="Customer AI deployment location"><button type="button" data-deployment="managed" aria-pressed="false">OUR MANAGED PLATFORM</button><button type="button" data-deployment="btp" aria-pressed="true">CUSTOMER BTP</button></div>
+                </header>
+                <div class="plane-labels" aria-hidden="true"><span>AI REASONING PLANE (CUSTOMER)</span><span>SAP ACCESS PLANE (GOVERNED)</span></div>
+
+                <div class="architecture-board customer-architecture" aria-label="Customer AI Platform architecture">
+                  <div class="customer-main-flow architecture-flow">
+                    <article class="architecture-node compact-node"><i data-lucide="user-round" aria-hidden="true"></i><strong>BUSINESS<br />USER</strong></article>
+                    <span class="architecture-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                    <article class="architecture-node compact-node"><i data-lucide="panel-top" aria-hidden="true"></i><strong>TEAMS / WEB /<br />CUSTOM APP</strong></article>
+                    <span class="architecture-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                    <article class="architecture-node customer-runtime"><header><i data-lucide="circle-dot" aria-hidden="true"></i><strong>CUSTOM AGENT RUNTIME</strong><small data-deployment-label>Customer BTP</small></header><div><span><i data-lucide="workflow" aria-hidden="true"></i>Orchestration</span><span><i data-lucide="shield" aria-hidden="true"></i>Customer<br />rules</span><span><i data-lucide="database" aria-hidden="true"></i>RAG +<br />memory</span><span><i data-lucide="git-branch" aria-hidden="true"></i>Model<br />router</span></div></article>
+                    <span class="architecture-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                    <article class="architecture-node approval-node"><i data-lucide="user-round-check" aria-hidden="true"></i><strong>HUMAN APPROVAL<br />+ DETERMINISTIC<br />WORKER</strong></article>
+                    <span class="architecture-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                    <article class="architecture-node integration-node"><i data-lucide="cloud" aria-hidden="true"></i><strong>SAP INTEGRATION SUITE</strong><span><i data-lucide="waypoints" aria-hidden="true"></i>MCP server</span><span><i data-lucide="shield" aria-hidden="true"></i>API Management</span></article>
+                    <span class="architecture-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                    <article class="architecture-node access-gate"><i data-lucide="lock-keyhole" aria-hidden="true"></i><strong>SUPPORTED<br />SAP<br />INTERFACES</strong></article>
+                    <span class="architecture-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                    <article class="architecture-node architecture-node-apps"><i data-lucide="network" aria-hidden="true"></i><strong>CONNECTED SAP<br />BUSINESS APPLICATIONS</strong><span>All entitled products<br />relevant to the use case</span><a href="#agent-matrix" data-open-agent-routes>Open product scope<i data-lucide="arrow-right" aria-hidden="true"></i></a></article>
+                  </div>
+                  <div class="customer-support-row"><div class="knowledge-rail"><i data-lucide="history" aria-hidden="true"></i><span>APPROVED HISTORY</span><b>&bull;</b><i data-lucide="shield-check" aria-hidden="true"></i><span>CUSTOMER POLICY</span><b>&bull;</b><i data-lucide="box" aria-hidden="true"></i><span>VECTOR STORE</span></div><div class="fallback-gate"><i data-lucide="triangle-alert" aria-hidden="true"></i><strong>NO SUPPORTED INTERFACE</strong><i data-lucide="arrow-right" aria-hidden="true"></i><span>SAP-native or<br />manual step</span></div></div>
+                  <div class="architecture-rail customer-governance-rail"><span><i data-lucide="user-round" aria-hidden="true"></i>IDENTITY</span><span><i data-lucide="shield-check" aria-hidden="true"></i>LEAST PRIVILEGE</span><span><i data-lucide="file-text" aria-hidden="true"></i>AUDIT</span><span><i data-lucide="chart-no-axes-combined" aria-hidden="true"></i>EVALUATION</span><span><i data-lucide="circle-dollar-sign" aria-hidden="true"></i>COST + MODEL OBSERVABILITY</span></div>
+                </div>
+              </article>
+
+              <article class="model-panel model-panel-hybrid" id="model-hybrid-ai-workspace" data-model-panel="hybrid-ai-workspace" role="tabpanel" aria-labelledby="model-hybrid-title" tabindex="-1" hidden>
+                <header class="model-heading"><div><h2 id="model-hybrid-title">Hybrid AI Workspace</h2><p>Route each use case to the right execution lane, then govern both as one AI estate.</p></div></header>
+                <div class="architecture-board hybrid-architecture" aria-label="Hybrid AI Workspace architecture">
+                  <div class="hybrid-main-flow architecture-flow">
+                    <div class="hybrid-intake-flow">
+                      <div class="hybrid-inputs"><article class="architecture-node compact-node"><i data-lucide="sparkles" aria-hidden="true"></i><strong>JOULE /<br />SAP APPS</strong></article><article class="architecture-node compact-node"><i data-lucide="panel-top" aria-hidden="true"></i><strong>TEAMS /<br />CUSTOM APP</strong></article></div>
+                      <span class="architecture-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                      <article class="architecture-node hybrid-use-case"><i data-lucide="user-round" aria-hidden="true"></i><strong>BUSINESS<br />USE CASE</strong></article>
+                      <span class="architecture-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                      <article class="architecture-node policy-router"><i data-lucide="route" aria-hidden="true"></i><strong>USE-CASE +<br />POLICY ROUTER</strong><ul><li>Process fit</li><li>Supported access</li><li>Risk + approval</li><li>Three-year cost</li></ul></article>
+                    </div>
+                    <span class="architecture-arrow split-arrow"><i data-lucide="git-fork" aria-hidden="true"></i></span>
+                    <div class="hybrid-lanes"><section><h3>SAP-NATIVE LANE</h3><div><article class="architecture-node"><i data-lucide="sparkles" aria-hidden="true"></i><strong>EMBEDDED JOULE</strong></article><i data-lucide="arrow-right" aria-hidden="true"></i><article class="architecture-node"><i data-lucide="box" aria-hidden="true"></i><strong>SAP AGENT<br />OR SKILL</strong></article></div></section><div class="hybrid-lane-bridge"><span>A2A / BYOA</span><small>Joule outbound where supported</small></div><section><h3>CUSTOMER AI LANE</h3><div><article class="architecture-node"><i data-lucide="network" aria-hidden="true"></i><strong>CUSTOM AGENT<br />RUNTIME</strong><small>Customer rules &bull; RAG &bull; Model choice</small></article><i data-lucide="arrow-right" aria-hidden="true"></i><article class="architecture-node"><i data-lucide="waypoints" aria-hidden="true"></i><strong>MCP + API<br />MANAGEMENT</strong></article><i data-lucide="arrow-right" aria-hidden="true"></i><article class="architecture-node"><i data-lucide="plug" aria-hidden="true"></i><strong>SUPPORTED SAP<br />INTERFACES</strong></article></div></section><p class="hybrid-fallback"><i data-lucide="triangle-alert" aria-hidden="true"></i>No supported interface &rarr; SAP-native or manual step</p></div>
+                    <span class="architecture-arrow merge-arrow"><i data-lucide="git-merge" aria-hidden="true"></i></span>
+                    <div class="hybrid-outcome-flow">
+                      <article class="architecture-node approval-node"><i data-lucide="user-round-check" aria-hidden="true"></i><strong>HUMAN OR<br />SAP-NATIVE<br />APPROVAL</strong></article>
+                      <span class="architecture-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                      <article class="architecture-node architecture-node-apps"><i data-lucide="network" aria-hidden="true"></i><strong>CONNECTED SAP<br />BUSINESS APPLICATIONS</strong><span>All entitled products<br />relevant to the use case</span><a href="#agent-matrix" data-open-agent-routes>Open product scope<i data-lucide="arrow-right" aria-hidden="true"></i></a></article>
+                    </div>
+                  </div>
+                  <div class="architecture-rail hybrid-governance-rail"><span><i data-lucide="user-round" aria-hidden="true"></i>IDENTITY</span><b>&bull;</b><span><i data-lucide="shield-check" aria-hidden="true"></i>POLICY</span><b>&bull;</b><span><i data-lucide="file-text" aria-hidden="true"></i>AUDIT</span><b>&bull;</b><span><i data-lucide="chart-no-axes-combined" aria-hidden="true"></i>EVALUATION</span><b>&bull;</b><span><i data-lucide="circle-dollar-sign" aria-hidden="true"></i>COST</span><b>&bull;</b><span><i data-lucide="users-round" aria-hidden="true"></i>OWNERSHIP</span></div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="framework-hero legacy-framework-intro" id="legacy-framework" aria-labelledby="legacy-framework-title">
+            <div class="hero-copy">
+              <h1 id="legacy-framework-title">AI Adoption Framework</h1>
               <div class="executive-statement">
                 <strong>The answer is rarely SAP-only or custom-only.</strong>
                 <p>Choose the right delivery route for each use case, then govern the portfolio as one hybrid AI workspace.</p>
               </div>
               <p class="hero-summary">Compare SAP Business AI, our managed custom AI platform, and a hybrid approach using process fit, permitted SAP access, three-year cost, adaptability, control, and lock-in—not vendor preference.</p>
               <div class="hero-actions" aria-label="Use the adoption framework">
-                <a class="primary-action" href="#decision"><span>Assess one use case</span><i data-lucide="arrow-down-right" aria-hidden="true"></i></a>
-                <a class="secondary-action" href="#hybrid-ai"><span>See the hybrid workspace</span><i data-lucide="arrow-down-right" aria-hidden="true"></i></a>
+                <a class="primary-action" href="#accruals"><span>See a worked example</span><i data-lucide="arrow-down-right" aria-hidden="true"></i></a>
+                <a class="secondary-action" href="#hybrid-ai-workspace"><span>See the hybrid workspace</span><i data-lucide="arrow-down-right" aria-hidden="true"></i></a>
               </div>
             </div>
             <div class="hero-mark" aria-hidden="true">
@@ -77,7 +177,7 @@
             </div>
           </section>
 
-          <section class="why-how-where" aria-label="Why, how, and where framework">
+          <section class="why-how-where legacy-framework-intro" aria-label="Why, how, and where framework">
             <article>
               <i data-lucide="target" aria-hidden="true"></i>
               <h2>WHY — Start with the business problem</h2>
@@ -95,7 +195,7 @@
             </article>
           </section>
 
-          <section class="plain-answer" aria-labelledby="plain-answer-title">
+          <section class="plain-answer legacy-framework-intro" aria-labelledby="plain-answer-title">
             <div>
               <h2 id="plain-answer-title">Does SAP allow customer-built AI agents?</h2>
               <p><strong>Yes—SAP documents third-party agents, side-by-side applications, A2A, MCP, and customer-built services.</strong> The boundary is interface-specific: if a required read or action has no supported doorway in that edition and release, an external agent cannot perform that step supportably.</p>
@@ -108,104 +208,7 @@
             </div>
           </section>
 
-          <section class="decision-section" id="decision" aria-labelledby="decision-title">
-            <header class="section-heading">
-              <div>
-                <h2 id="decision-title">Route each use case before choosing a platform</h2>
-                <p>Permission, identity, and transaction control are hard gates. For viable routes, compare process fit, three-year cost, adaptability, time to value, operating burden, and lock-in.</p>
-              </div>
-              <span class="section-number">01</span>
-            </header>
-
-            <div class="route-options" aria-label="Three AI delivery routes">
-              <article class="route-option sap-route">
-                <span>Route 1</span>
-                <i data-lucide="sparkles" aria-hidden="true"></i>
-                <h3>SAP Business AI</h3>
-                <p>Best when the packaged capability fits the real process, needs embedded SAP context, and its full lifecycle cost is competitive.</p>
-              </article>
-              <article class="route-option custom-route">
-                <span>Route 2</span>
-                <i data-lucide="brain-circuit" aria-hidden="true"></i>
-                <h3>Managed Custom AI</h3>
-                <p>Best when the process is customer-specific, supported interfaces cover the required data and actions, and adaptability creates value.</p>
-              </article>
-              <article class="route-option hybrid-route">
-                <span>Route 3</span>
-                <i data-lucide="git-merge" aria-hidden="true"></i>
-                <h3>Hybrid by design</h3>
-                <p>Best when custom intelligence and SAP-native access belong in the same workflow—or different use cases need different routes.</p>
-              </article>
-            </div>
-
-            <div class="decision-workbench">
-              <form class="decision-form" id="route-assessment">
-                <h3>Assess one use case</h3>
-                <p>Change the answers to see the likely delivery route.</p>
-                <label>Is a relevant SAP capability available?
-                  <select id="sap-capability">
-                    <option value="available">Yes, packaged and available</option>
-                    <option value="partial" selected>Partly or not yet proven</option>
-                    <option value="unavailable">No packaged capability</option>
-                  </select>
-                </label>
-                <label>How well does SAP’s standard process fit?
-                  <select id="process-fit">
-                    <option value="high">High fit</option>
-                    <option value="mixed" selected>Mixed fit</option>
-                    <option value="low">Low fit</option>
-                  </select>
-                </label>
-                <label>Can custom AI use every required SAP interface?
-                  <select id="interface-fit">
-                    <option value="full">Yes—supported read and action interfaces</option>
-                    <option value="partial" selected>Partly—some steps remain SAP-native</option>
-                    <option value="none">No supported interface for a required step</option>
-                  </select>
-                </label>
-                <label>How customer-specific is the operating process?
-                  <select id="process-variation">
-                    <option value="low">Low variation</option>
-                    <option value="medium">Moderate variation</option>
-                    <option value="high" selected>High variation</option>
-                  </select>
-                </label>
-                <label>Which route has the stronger three-year economics?
-                  <select id="economics-fit">
-                    <option value="sap">SAP Business AI</option>
-                    <option value="similar" selected>Not yet clear</option>
-                    <option value="custom">Managed custom platform</option>
-                  </select>
-                </label>
-                <label>What is the most consequential action?
-                  <select id="action-fit">
-                    <option value="native" selected>SAP-native transaction or privileged action</option>
-                    <option value="controlled">Released API with approval</option>
-                    <option value="none">Read, explain, classify, or draft only</option>
-                  </select>
-                </label>
-              </form>
-
-              <aside class="decision-result hybrid" id="decision-result" aria-live="polite">
-                <span id="decision-route-label">Likely route</span>
-                <i data-lucide="git-merge" aria-hidden="true"></i>
-                <h3 id="decision-route-title">Hybrid by design</h3>
-                <p id="decision-route-reason">Use custom AI for customer-specific reasoning and SAP for the native or closed transaction step.</p>
-                <ul id="decision-route-actions">
-                  <li>Confirm the exact published interfaces and communication arrangements.</li>
-                  <li>Separate proposal generation from approval and posting.</li>
-                  <li>Compare three-year cost per controlled business outcome.</li>
-                </ul>
-              </aside>
-            </div>
-
-            <div class="decision-gate-note">
-              <i data-lucide="shield-alert" aria-hidden="true"></i>
-              <p><strong>No supported interface means no custom shortcut.</strong> Use the SAP-native capability, retain a manual step, expose an allowed customer service, or redesign the scope. MCP cannot manufacture permission.</p>
-            </div>
-          </section>
-
-          <section class="architecture-section" id="architectures" aria-labelledby="architectures-title">
+          <section class="architecture-section legacy-architecture-section" id="legacy-architectures" aria-labelledby="architectures-title">
             <header class="section-heading">
               <div>
                 <h2 id="architectures-title">Three operating models for SAP AI</h2>
@@ -214,7 +217,7 @@
               <span class="section-number">02</span>
             </header>
 
-            <article class="architecture-card" id="sap-business-ai">
+            <article class="architecture-card" id="legacy-sap-business-ai">
               <header class="architecture-title-row">
                 <div>
                   <span class="architecture-index">Scenario 1</span>
@@ -288,7 +291,7 @@
               </div>
             </article>
 
-            <article class="architecture-card external" id="external-ai">
+            <article class="architecture-card external" id="legacy-external-ai">
               <header class="architecture-title-row">
                 <div>
                   <span class="architecture-index">Scenario 2</span>
@@ -355,7 +358,7 @@
               </div>
             </article>
 
-            <article class="architecture-card hybrid" id="hybrid-ai">
+            <article class="architecture-card hybrid" id="legacy-hybrid-ai">
               <header class="architecture-title-row">
                 <div>
                   <span class="architecture-index">Scenario 3</span>
@@ -411,6 +414,13 @@
             </article>
           </section>
 
+          <dialog class="agent-evidence-dialog" id="agent-evidence-dialog" aria-labelledby="agent-evidence-title">
+            <div class="agent-evidence-shell">
+              <header class="agent-evidence-header">
+                <div><span>Supporting analysis</span><strong id="agent-evidence-title">Agent Evidence</strong></div>
+                <button type="button" data-close-evidence><span>Close</span><i data-lucide="x" aria-hidden="true"></i></button>
+              </header>
+              <div class="agent-evidence-scroll" data-evidence-scroll>
           <section class="api-policy-gate" aria-labelledby="api-policy-title">
             <i data-lucide="shield-alert" aria-hidden="true"></i>
             <div>
@@ -424,99 +434,105 @@
             <header class="section-heading">
               <div>
                 <h2 id="accruals-title">Worked example — Accounting Accruals Agent</h2>
-                <p>Many customers do not follow one standard PO-accrual pattern. Finance uploads manual journals shaped by local knowledge, spreadsheets, exceptions, and prior close experience—so the real decision is how to combine that customer context with current SAP evidence.</p>
+                <p>When local accrual rules and manual history matter, use customer AI to prepare the proposal and SAP to control the accounting outcome.</p>
               </div>
-              <span class="section-number">03</span>
+              <span class="section-number">01</span>
             </header>
 
             <div class="status-nuance">
               <i data-lucide="info" aria-hidden="true"></i>
-              <p><strong>Availability evidence is moving.</strong> SAP announced the agent in beta, SAP Cloud ERP 2602 material describes the Public Edition capability as generally available, and the local SAP Discovery Center snapshot dated 12 July 2026 still labels J787 beta. The full Private Edition agent is on the Q4 2026 roadmap; a narrower Manual Accrual Object Creation capability is already available for supported Private Edition releases. Validate the exact tenant and contract.</p>
+              <p><strong>Validate availability before committing to the SAP-native lane.</strong> Product, release, region, entitlement, tenant configuration, and supported interfaces can change the route.</p>
             </div>
 
-            <div class="choice-grid" aria-label="Accruals agent delivery choices">
-              <article>
-                <i data-lucide="cloud" aria-hidden="true"></i>
-                <h3>Use SAP Business AI</h3>
-                <p>Buy the packaged agent when it fits the actual close process, supplies native context that cannot be exposed, and wins on three-year cost per controlled outcome.</p>
-                <ul><li>SAP-delivered context and lifecycle</li><li>Lower custom engineering burden</li><li>Greater tenant, release, and commercial dependency</li></ul>
-              </article>
-              <article>
-                <i data-lucide="code-xml" aria-hidden="true"></i>
-                <h3>Use our Managed Custom AI</h3>
-                <p>Use customer history and local rules to prepare evidence-linked proposals when supported read and action interfaces cover the complete process.</p>
-                <ul><li>Customer-optimised reasoning</li><li>Reusable managed platform and SAP adapters</li><li>We operate controls, evaluation, support, and upgrades</li></ul>
-              </article>
-              <article class="recommended-choice">
-                <i data-lucide="split" aria-hidden="true"></i>
-                <h3>Use the hybrid boundary</h3>
-                <p>Our agent learns from manual-accrual history and cross-checks POs; SAP or a person completes any native action that is not supportably exposed.</p>
-                <ul><li>Custom intelligence reflects the customer</li><li>SAP retains closed and consequential actions</li><li>The process degrades safely to a draft or manual step</li></ul>
-              </article>
-            </div>
-
-            <article class="accrual-blueprint">
+            <article class="accrual-deployment">
               <header>
-                <div><span>Recommended hybrid pattern</span><h3>Customer-specific reasoning, deterministic accounting, SAP-controlled action</h3></div>
-                <a href="#accrual-steps">View implementation sequence<i data-lucide="arrow-down" aria-hidden="true"></i></a>
+                <div>
+                  <span>Recommended deployment</span>
+                  <h3>Build the customer logic; keep accounting action controlled in SAP</h3>
+                  <p>The custom lane matches approved manual-accrual precedents with current evidence and prepares a traceable draft. The SAP-native lane handles packaged capability or any action that cannot be supportably exposed.</p>
+                </div>
+                <strong><i data-lucide="blend" aria-hidden="true"></i>Hybrid AI Workspace</strong>
               </header>
 
-              <div class="responsibility-split">
-                <section>
-                  <h4>AI may</h4>
-                  <ul>
-                    <li>Learn approved patterns from historical manual-accrual uploads and close evidence.</li>
-                    <li>Cross-check PO, goods receipt, service entry, invoice, contract, and policy evidence.</li>
-                    <li>Classify exceptions, explain rationale, identify missing evidence, and recommend a proposal.</li>
-                    <li>Return constrained JSON with evidence IDs and confidence.</li>
-                  </ul>
-                </section>
-                <section>
-                  <h4>Deterministic code and SAP must</h4>
-                  <ul>
-                    <li>Calculate official amounts, tolerances, taxes, currency, company code, ledger, period, and balancing.</li>
-                    <li>Enforce duplicate checks, segregation of duties, posting permissions, and approval.</li>
-                    <li>Simulate, post, reconcile, reverse, and retain audit evidence when a permitted action exists.</li>
-                    <li>Stop at a proposal when the required SAP action is not supportably exposed.</li>
-                    <li>Never expose the posting identity as an MCP tool available to the model.</li>
-                  </ul>
-                </section>
-              </div>
+              <figure class="accrual-hybrid-board" aria-labelledby="accrual-architecture-caption">
+                <figcaption id="accrual-architecture-caption" class="sr-only">Hybrid deployment architecture for an Accounting Accruals Agent</figcaption>
+                <div class="accrual-hybrid-flow">
+                  <div class="accrual-intake" aria-label="Accrual inputs">
+                    <article class="accrual-node"><i data-lucide="calendar-clock" aria-hidden="true"></i><strong>FINANCE CLOSE</strong><small>Close calendar + controller request</small></article>
+                    <article class="accrual-node"><i data-lucide="history" aria-hidden="true"></i><strong>APPROVED HISTORY</strong><small>Manual journals + policy + prior evidence</small></article>
+                  </div>
+                  <span class="accrual-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                  <article class="accrual-node accrual-router">
+                    <i data-lucide="route" aria-hidden="true"></i>
+                    <strong>ACCRUAL USE-CASE<br />+ POLICY ROUTER</strong>
+                    <ul><li>Process fit</li><li>Supported SAP access</li><li>Risk + approval</li><li>Three-year cost</li></ul>
+                  </article>
+                  <span class="accrual-arrow accrual-split"><i data-lucide="git-fork" aria-hidden="true"></i></span>
 
-              <ol class="implementation-steps" id="accrual-steps">
-                <li><strong>Trigger</strong><span>Run on the close calendar; use events only when the exact business event is released.</span></li>
-                <li><strong>Learn the customer pattern</strong><span>Ingest approved historical manual journals, upload templates, close calendars, and accounting policies.</span></li>
-                <li><strong>Read current evidence</strong><span>Use a restricted identity and supported interfaces to retrieve PO, receipt, service-entry, invoice, and contract data.</span></li>
-                <li><strong>Calculate candidates</strong><span>Deterministic service normalises coding and calculates open values, timing, thresholds, duplicates, and reversals.</span></li>
-                <li><strong>Analyze</strong><span>External model receives the minimum required fields and approved policy evidence.</span></li>
-                <li><strong>Persist a proposal</strong><span>Save a draft in an extension store; expose read, draft, and submit-for-approval tools only.</span></li>
-                <li><strong>Approve</strong><span>A named controller accepts or rejects with amount, coding, evidence, confidence, and model version visible.</span></li>
-                <li><strong>Simulate</strong><span>Post-approval worker revalidates and uses test/simulation support where the SAP API provides it.</span></li>
-                <li><strong>Write or hand off</strong><span>Use the permitted accrual-object or journal-entry API. If the action is closed, hand the approved proposal to the native SAP process.</span></li>
-                <li><strong>Reconcile</strong><span>Store the SAP document reference, approval ID, payload hash, and response; never blind-retry.</span></li>
-                <li><strong>Reverse &amp; close</strong><span>Keep reversal and close in the native SAP lifecycle or another separately approved action.</span></li>
-              </ol>
+                  <div class="accrual-execution-lanes">
+                    <section class="accrual-lane accrual-sap-lane">
+                      <h4><i data-lucide="sparkles" aria-hidden="true"></i>SAP-NATIVE LANE</h4>
+                      <div>
+                        <article class="accrual-node"><i data-lucide="box" aria-hidden="true"></i><strong>SAP ACCOUNTING<br />ACCRUALS AGENT</strong><small>Use when available, entitled, and process-fit</small></article>
+                        <span class="accrual-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                        <article class="accrual-node"><i data-lucide="landmark" aria-hidden="true"></i><strong>SAP-NATIVE<br />FINANCE ACTION</strong><small>Create, reverse, close, or retain a manual step</small></article>
+                      </div>
+                    </section>
 
-              <div class="identity-model">
-                <div><code>AI_ACCRUAL_READ</code><span>Restricted evidence retrieval</span></div>
-                <div><code>AI_ACCRUAL_DRAFT</code><span>Extension proposals only</span></div>
-                <div><code>AI_ACCRUAL_POST</code><span>Post-approval worker only—never the LLM or MCP server</span></div>
+                    <section class="accrual-lane accrual-customer-lane">
+                      <h4><i data-lucide="brain-circuit" aria-hidden="true"></i>CUSTOMER AI LANE</h4>
+                      <div>
+                        <article class="accrual-node"><i data-lucide="database" aria-hidden="true"></i><strong>RULES + RAG</strong><small>Customer history and policy</small></article>
+                        <span class="accrual-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                        <article class="accrual-node"><i data-lucide="network" aria-hidden="true"></i><strong>ACCRUAL<br />REASONING AGENT</strong><small>Evidence-linked proposal</small></article>
+                        <span class="accrual-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                        <article class="accrual-node"><i data-lucide="calculator" aria-hidden="true"></i><strong>DETERMINISTIC<br />CALCULATOR</strong><small>Amounts, coding, duplicates</small></article>
+                        <span class="accrual-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                        <article class="accrual-node"><i data-lucide="waypoints" aria-hidden="true"></i><strong>MCP + API<br />MANAGEMENT</strong><small>Supported read and draft tools</small></article>
+                      </div>
+                    </section>
+                  </div>
+
+                  <span class="accrual-arrow accrual-merge"><i data-lucide="git-merge" aria-hidden="true"></i></span>
+                  <article class="accrual-node accrual-approval"><i data-lucide="user-round-check" aria-hidden="true"></i><strong>CONTROLLER APPROVAL<br />+ POST-APPROVAL WORKER</strong><small>Named approver; posting identity stays outside the model</small></article>
+                  <span class="accrual-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></span>
+                  <article class="accrual-node accrual-sap-record"><i data-lucide="network" aria-hidden="true"></i><strong>CONNECTED SAP<br />BUSINESS APPLICATIONS</strong><small>Authoritative document, reconciliation, reversal, and audit trail</small></article>
+                </div>
+
+                <div class="accrual-governance-rail" aria-label="Shared governance controls">
+                  <span><i data-lucide="user-round" aria-hidden="true"></i>IDENTITY</span><b>&bull;</b>
+                  <span><i data-lucide="shield-check" aria-hidden="true"></i>POLICY</span><b>&bull;</b>
+                  <span><i data-lucide="file-text" aria-hidden="true"></i>AUDIT</span><b>&bull;</b>
+                  <span><i data-lucide="chart-no-axes-combined" aria-hidden="true"></i>EVALUATION</span><b>&bull;</b>
+                  <span><i data-lucide="circle-dollar-sign" aria-hidden="true"></i>COST</span><b>&bull;</b>
+                  <span><i data-lucide="users-round" aria-hidden="true"></i>OWNERSHIP</span>
+                </div>
+
+                <aside class="accrual-boundary-note">
+                  <i data-lucide="lock-keyhole" aria-hidden="true"></i>
+                  <p><strong>MCP exposes typed read, draft, and submit-for-approval tools; it does not create SAP permission.</strong> If no supported write action exists, the approved proposal is handed to the SAP-native process or a controlled manual step.</p>
+                </aside>
+              </figure>
+
+              <div class="accrual-responsibilities">
+                <section><h4>Customer AI prepares the decision</h4><ul><li>Match approved precedents from manual-accrual history and local policy.</li><li>Cross-check PO, receipt, service-entry, invoice, and contract evidence.</li><li>Return a constrained draft with evidence IDs, rationale, and confidence.</li></ul></section>
+                <section><h4>Deterministic services and SAP control the outcome</h4><ul><li>Calculate official values, coding, currency, ledger, period, and tolerances.</li><li>Enforce duplicate checks, segregation of duties, approval, and posting rights.</li><li>Post, reconcile, reverse, and close only through a permitted SAP action.</li></ul></section>
               </div>
             </article>
 
             <section class="cost-comparison" aria-labelledby="cost-title">
               <header>
-                <div><h3 id="cost-title">Runtime illustration—then calculate three-year TCO</h3><p>Token or AI Unit cost is only one line. The decision must include implementation, SAP access, fit-gap effort, hosting, controls, evaluation, managed operations, support, and change.</p></div>
-                <span>Editable assumptions</span>
+                <div><h3 id="cost-title">Annual variable-runtime illustration — USD, not a quote</h3><p>Both results use one presentation currency. They compare different billing measures, so use them as explainable planning lines—not as a like-for-like TCO comparison.</p></div>
+                <span>Editable planning assumptions</span>
               </header>
 
               <div class="calculator-grid">
                 <form class="cost-inputs" id="cost-calculator">
                   <label>Accrual tasks per year<input id="tasks-per-year" type="number" min="1" step="100" value="1000" /></label>
-                  <label>SAP agent actions per task<input id="actions-per-task" type="number" min="1" step="1" value="10" /></label>
+                  <label>SAP agent actions per task<input id="actions-per-task" type="number" min="1" step="1" value="10" /><small>Planning assumption—not published for this agent.</small></label>
                   <label>External input tokens per task<input id="input-tokens" type="number" min="0" step="1000" value="20000" /></label>
                   <label>External output tokens per task<input id="output-tokens" type="number" min="0" step="500" value="3000" /></label>
-                  <label>Example external model
+                  <label>OpenAI public API example — standard uncached text rates
                     <select id="model-rate">
                       <option value="1,6">GPT-5.6 Luna · US$1 / US$6 per 1M</option>
                       <option value="2.5,15" selected>GPT-5.6 Terra · US$2.50 / US$15 per 1M</option>
@@ -527,30 +543,52 @@
 
                 <div class="cost-results" aria-live="polite">
                   <article>
-                    <span>SAP generic agent-rate illustration</span>
-                    <strong id="sap-runtime-cost">€1,400</strong>
+                    <span>SAP generic autonomous-agent benchmark</span>
+                    <strong id="sap-runtime-cost">≈ US$1,600</strong>
                     <small><b id="sap-ai-units">200</b> AI Units per year</small>
-                    <p><code>tasks × actions × 0.02 AI Units × €7</code></p>
+                    <p><b id="sap-three-year-cost">≈ US$4,801</b> three-year variable runtime</p>
                   </article>
                   <article>
-                    <span>External model-token illustration</span>
+                    <span>External model API-token cost only</span>
                     <strong id="external-runtime-cost">US$95</strong>
                     <small><b id="external-token-count">23.0M</b> tokens per year</small>
-                    <p><code>input tokens × input rate + output tokens × output rate</code></p>
+                    <p><b id="external-three-year-cost">US$285</b> three-year variable runtime</p>
                   </article>
                 </div>
               </div>
 
-              <div class="cost-caveats">
-                <div><strong>Known SAP rate example</strong><span>0.02 AI Units per agent action and €7 per AI Unit. SAP has not published how many actions one Accounting Accruals Agent task uses.</span></div>
-                <div><strong>No token conversion</strong><span>SAP AI Units are not model tokens. There is no official AI Unit-to-token conversion.</span></div>
-                <div><strong>The biggest cost is usually elsewhere</strong><span>Data readiness, SAP integration, accounting controls, testing, change, support, and platform entitlements can dominate both paths.</span></div>
+              <div class="cost-formulas" aria-label="Calculation steps">
+                <section>
+                  <header><i data-lucide="sparkles" aria-hidden="true"></i><div><span>SAP benchmark calculation</span><a href="https://assets.dm.ux.sap.com/sap-user-groups/pdfs/260611_ai_commercial_details_01.pdf" target="_blank" rel="noreferrer">SAP commercial source<i data-lucide="external-link" aria-hidden="true"></i></a></div></header>
+                  <ol>
+                    <li><span>Actions per year</span><code id="sap-formula-actions">1,000 tasks × 10 actions = 10,000</code></li>
+                    <li><span>AI Units per year</span><code id="sap-formula-units">10,000 × 0.02 = 200 AI Units</code></li>
+                    <li><span>List-price basis</span><code id="sap-formula-eur">200 × €7 = €1,400</code></li>
+                    <li><span>Convert to USD</span><code id="sap-formula-usd">€1,400 × 1.1430 = US$1,600</code></li>
+                    <li><span>Three years</span><code id="sap-formula-three-year">US$1,600.20 × 3 = US$4,801</code></li>
+                  </ol>
+                </section>
+                <section>
+                  <header><i data-lucide="braces" aria-hidden="true"></i><div><span>External model calculation</span><a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noreferrer">OpenAI rate source<i data-lucide="external-link" aria-hidden="true"></i></a></div></header>
+                  <ol>
+                    <li><span>Input tokens</span><code id="external-formula-input">1,000 × 20,000 ÷ 1M × US$2.50 = US$50</code></li>
+                    <li><span>Output tokens</span><code id="external-formula-output">1,000 × 3,000 ÷ 1M × US$15 = US$45</code></li>
+                    <li><span>Annual model cost</span><code id="external-formula-annual">US$50 + US$45 = US$95</code></li>
+                    <li><span>Three years</span><code id="external-formula-three-year">US$95 × 3 = US$285</code></li>
+                  </ol>
+                </section>
               </div>
 
-              <div class="tco-model" aria-label="Three-year total cost model">
-                <article><h4>SAP Business AI TCO</h4><p>Entitlements, AI Units, setup, fit-gap work, integration, adoption, and SAP support.</p></article>
-                <article><h4>Managed Custom AI TCO</h4><p>Platform amortisation, SAP adapters, model usage, hosting, controls, evaluation, and managed operations.</p></article>
-                <article><h4>Hybrid TCO</h4><p>Selective SAP consumption, shared custom platform, and the operating cost of two governed boundaries.</p></article>
+              <div class="cost-evidence" aria-label="Facts, assumptions, and exclusions">
+                <article><i data-lucide="badge-check" aria-hidden="true"></i><div><strong>Published facts used</strong><p><a href="https://assets.dm.ux.sap.com/sap-user-groups/pdfs/260611_ai_commercial_details_01.pdf" target="_blank" rel="noreferrer">SAP: 0.02 AI Units per agent action and €7 per AI Unit</a>. <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html" target="_blank" rel="noreferrer">ECB: EUR 1 = USD 1.1430 on 10 July 2026</a>. <a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noreferrer">OpenAI: Terra US$2.50 input / US$15 output per 1M tokens</a>.</p></div></article>
+                <article><i data-lucide="sliders-horizontal" aria-hidden="true"></i><div><strong>Assumptions to replace before a quote</strong><p>Tasks, actions per task, tokens per task, constant FX, constant pricing, and flat three-year volume. Confirm the feature in SAP’s <a href="https://www.sap.com/products/artificial-intelligence/price-list/list.pupm-ai-automation.world.html" target="_blank" rel="noreferrer">AI Features Guide Price List</a>, AI Estimator, tenant, and contract.</p></div></article>
+                <article><i data-lucide="triangle-alert" aria-hidden="true"></i><div><strong>What the figures exclude</strong><p>Implementation, entitlements, hosting, SAP integration, security, cached tokens, retries, testing, evaluation, support, change, and operational ownership. SAP AI Units are not model tokens; no official conversion exists.</p></div></article>
+              </div>
+
+              <div class="tco-model" aria-label="Full three-year total cost model">
+                <article><h4>SAP Business AI TCO</h4><p>Implementation + entitlement + AI Units + integration + adoption + support</p></article>
+                <article><h4>Customer AI Platform TCO</h4><p>Implementation + platform + model + hosting + SAP integration + controls + evaluation + managed operations</p></article>
+                <article><h4>Hybrid AI Workspace TCO</h4><p>Selective SAP consumption + custom platform + integration + operating both governed boundaries</p></article>
                 <p><strong>Measure:</strong> cost per approved accrual posted without later correction—not cost per token or agent action.</p>
               </div>
             </section>
@@ -560,33 +598,116 @@
             <header class="section-heading">
               <div>
                 <h2 id="matrix-title">Route every SAP agent outcome: buy, build, or combine</h2>
-                <p>The matrix covers all 37 SAP Discovery Center records in the site’s 12 July 2026 snapshot. The route is an initial architecture recommendation—not a claim that an API, entitlement, or capability is available in the customer tenant.</p>
+                <p>The matrix covers all 37 SAP Discovery Center records in the site’s 12 July 2026 snapshot. Compare consuming the SAP-delivered capability, building on the Customer AI Platform, and combining both in the Hybrid AI Workspace. Every recommendation remains subject to current interfaces, entitlements, and tenant availability.</p>
               </div>
-              <span class="section-number">04</span>
+              <span class="section-number">02</span>
             </header>
 
-            <div class="matrix-summary" aria-label="Initial route summary">
-              <div><strong data-route-count="custom">0</strong><span>Managed custom candidates</span><small>Portable read, explain, classify, and draft outcomes</small></div>
-              <div><strong data-route-count="hybrid">0</strong><span>Hybrid candidates</span><small>Transactions, optimisation, or mixed interface boundaries</small></div>
-              <div><strong data-route-count="sap">0</strong><span>SAP-first candidates</span><small>Private semantics or embedded product context</small></div>
+            <div class="matrix-summary" aria-label="Recommended operating-model summary">
+              <div class="summary-sap"><strong data-route-count="sap">0</strong><span>Recommended: SAP Business AI</span><small>Use the SAP-delivered capability as the core</small></div>
+              <div class="summary-customer"><strong data-route-count="custom">0</strong><span>Recommended: Customer AI Platform</span><small>Build the portable outcome around customer rules</small></div>
+              <div class="summary-hybrid"><strong data-route-count="hybrid">0</strong><span>Recommended: Hybrid AI Workspace</span><small>Combine customer reasoning with SAP-native control</small></div>
             </div>
 
             <div class="matrix-controls">
               <label><span>Search agents</span><div><i data-lucide="search" aria-hidden="true"></i><input type="search" id="agent-search" placeholder="Search name, product, category, or ID" /></div></label>
-              <label><span>Outside feasibility</span><select id="feasibility-filter"><option value="">All levels</option><option value="high">High</option><option value="medium">Medium</option><option value="partial">Partial only</option></select></label>
+              <label><span>Customer platform feasibility</span><select id="feasibility-filter"><option value="">All levels</option><option value="high">High</option><option value="medium">Medium</option><option value="partial">Partial only</option></select></label>
               <label><span>SAP status</span><select id="availability-filter"><option value="">All statuses</option><option value="Generally Available">Generally Available</option><option value="Beta">Beta</option><option value="Early Adopter Care">Early Adopter Care</option></select></label>
               <button id="clear-agent-filters" type="button">Clear filters</button>
             </div>
 
             <div class="agent-table-wrap">
               <table class="agent-table">
-                <caption class="sr-only">Initial delivery-route assessment for SAP agent catalogue outcomes</caption>
-                <thead><tr><th scope="col">Agent</th><th scope="col">SAP product / domain</th><th scope="col">Status</th><th scope="col">Outside feasibility</th><th scope="col">Likely route</th><th scope="col">Integration boundary</th><th scope="col"><span class="sr-only">Details</span></th></tr></thead>
+                <caption class="sr-only">Operating-model fit and recommended approach for all 37 SAP agent catalogue outcomes</caption>
+                <colgroup>
+                  <col class="matrix-col-agent" />
+                  <col class="matrix-col-product" />
+                  <col class="matrix-col-status" />
+                  <col class="matrix-col-option" />
+                  <col class="matrix-col-option" />
+                  <col class="matrix-col-option" />
+                  <col class="matrix-col-recommendation" />
+                  <col class="matrix-col-boundary" />
+                  <col class="matrix-col-details" />
+                </colgroup>
+                <thead>
+                  <tr class="matrix-header-groups">
+                    <th class="matrix-agent" scope="col" rowspan="2">Agent</th>
+                    <th class="matrix-product" scope="col" rowspan="2">SAP product / domain</th>
+                    <th class="matrix-status" scope="col" rowspan="2">Status</th>
+                    <th class="matrix-option-group" scope="colgroup" colspan="3">Delivery option fit</th>
+                    <th class="matrix-recommendation" scope="col" rowspan="2">Recommended approach</th>
+                    <th class="matrix-boundary" scope="col" rowspan="2">Integration boundary</th>
+                    <th class="matrix-details" scope="col" rowspan="2"><span class="sr-only">Details</span></th>
+                  </tr>
+                  <tr class="matrix-header-options">
+                    <th class="matrix-option matrix-option-sap" scope="col">SAP Business AI</th>
+                    <th class="matrix-option matrix-option-customer" scope="col">Customer AI Platform</th>
+                    <th class="matrix-option matrix-option-hybrid" scope="col">Hybrid AI Workspace</th>
+                  </tr>
+                </thead>
                 <tbody id="agent-matrix-body"></tbody>
               </table>
               <p class="empty-table" id="agent-empty" hidden>No agent records match the selected filters.</p>
             </div>
             <p class="matrix-evidence" id="matrix-evidence" aria-live="polite">Loading the current site snapshot…</p>
+
+            <div class="custom-agent-portfolio" id="custom-agent-portfolio" aria-labelledby="custom-agent-title">
+              <header class="custom-portfolio-heading">
+                <div>
+                  <h3 id="custom-agent-title">Custom agents in our delivery pipeline</h3>
+                  <p>This matrix will show how each agent we build maps to SAP Business AI, the Customer AI Platform, or the Hybrid AI Workspace—together with its build stage, SAP integration boundary, and recommended deployment route.</p>
+                </div>
+                <span class="custom-portfolio-status"><i data-lucide="clock-3" aria-hidden="true"></i>Awaiting portfolio examples</span>
+              </header>
+
+              <div class="agent-table-wrap custom-agent-table-wrap">
+                <table class="agent-table custom-agent-table">
+                  <caption class="sr-only">Operating-model fit and recommended approach for custom agents being built by our team</caption>
+                  <colgroup>
+                    <col class="matrix-col-agent" />
+                    <col class="matrix-col-product" />
+                    <col class="matrix-col-status" />
+                    <col class="matrix-col-option" />
+                    <col class="matrix-col-option" />
+                    <col class="matrix-col-option" />
+                    <col class="matrix-col-recommendation" />
+                    <col class="matrix-col-boundary" />
+                    <col class="matrix-col-details" />
+                  </colgroup>
+                  <thead>
+                    <tr class="matrix-header-groups">
+                      <th class="matrix-agent" scope="col" rowspan="2">Custom agent</th>
+                      <th class="matrix-product" scope="col" rowspan="2">SAP process / products</th>
+                      <th class="matrix-status" scope="col" rowspan="2">Build stage</th>
+                      <th class="matrix-option-group" scope="colgroup" colspan="3">Delivery option fit</th>
+                      <th class="matrix-recommendation" scope="col" rowspan="2">Recommended approach</th>
+                      <th class="matrix-boundary" scope="col" rowspan="2">Integration boundary</th>
+                      <th class="matrix-details" scope="col" rowspan="2"><span class="sr-only">Details</span></th>
+                    </tr>
+                    <tr class="matrix-header-options">
+                      <th class="matrix-option matrix-option-sap" scope="col">SAP Business AI</th>
+                      <th class="matrix-option matrix-option-customer" scope="col">Customer AI Platform</th>
+                      <th class="matrix-option matrix-option-hybrid" scope="col">Hybrid AI Workspace</th>
+                    </tr>
+                  </thead>
+                  <tbody id="custom-agent-portfolio-body">
+                    <tr class="custom-placeholder-row" data-placeholder="true">
+                      <td colspan="9">
+                        <div class="custom-agent-empty">
+                          <span class="custom-agent-empty-icon" aria-hidden="true"><i data-lucide="bot"></i></span>
+                          <div>
+                            <strong>Custom agent examples will be added here</strong>
+                            <p>Each example will be assessed after its business outcome, supported SAP interfaces, approval boundary, deployment owner, and build stage are confirmed.</p>
+                            <small>Agent name · business outcome · SAP scope · build stage · hosting · operating-model fit · integration boundary</small>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </section>
 
           <section class="exit-risk-section" id="continuity" aria-labelledby="continuity-title">
@@ -595,7 +716,7 @@
                 <h2 id="continuity-title">Commercial continuity and platform dependency</h2>
                 <p>Both SAP Business AI and our managed custom platform are continuing services—not one-time development purchases. Customer data, platform intellectual property, operating responsibilities, transition support, and exit rights must be defined in the contract.</p>
               </div>
-              <span class="section-number">05</span>
+              <span class="section-number">03</span>
             </header>
 
             <div class="risk-table-wrap">
@@ -646,6 +767,19 @@
               <a href="https://developers.openai.com/api/docs/models" target="_blank" rel="noreferrer"><strong>Example external model token rates</strong><span>OpenAI API docs</span></a>
             </div>
           </section>
+              </div>
+            </div>
+          </dialog>
+
+          <dialog class="agent-evidence-dialog agent-routes-dialog" id="agent-routes-dialog" aria-labelledby="agent-routes-title">
+            <div class="agent-evidence-shell">
+              <header class="agent-evidence-header">
+                <div><span>37-agent routing matrix</span><strong id="agent-routes-title">Agent Routes</strong></div>
+                <button type="button" data-close-agent-routes><span>Close</span><i data-lucide="x" aria-hidden="true"></i></button>
+              </header>
+              <div class="agent-evidence-scroll agent-routes-scroll" data-agent-routes-scroll></div>
+            </div>
+          </dialog>
         </main>
 
         <footer class="adoption-footer">
